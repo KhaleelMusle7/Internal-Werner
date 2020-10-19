@@ -23,5 +23,5 @@ CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithNewCC'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
