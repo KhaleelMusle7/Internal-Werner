@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CheckoutWithSavedCCFromQuickOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80d2cdf1-d953-4a2f-946f-7922d87c6e31</testCaseGuid>
+</TestCaseEntity>

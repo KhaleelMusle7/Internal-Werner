@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_searchIcon</name>
+   <tag></tag>
+   <elementGuidId>a9312214-e5ca-4ecf-935d-31bd250e7d39</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.search-button-desktop-wrapper.hide-for-mobile.hide-for-sticky > button.button.tippy-menu-link.stop-click-propagation.expand-search-section > span.menu-icon.icon-Search</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//header[@id='header']/div[3]/div[2]/div[2]/div/div[2]/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>menu-icon icon-Search</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;header&quot;)/div[@class=&quot;head-nav-columns&quot;]/div[@class=&quot;head-nav prevent-touch-highlight&quot;]/div[@class=&quot;navigation-wrapper&quot;]/div[@class=&quot;block-container block-max-width&quot;]/div[@class=&quot;search-button-desktop-wrapper hide-for-mobile hide-for-sticky&quot;]/button[@class=&quot;button tippy-menu-link stop-click-propagation expand-search-section&quot;]/span[@class=&quot;menu-icon icon-Search&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//header[@id='header']/div[3]/div[2]/div[2]/div/div[2]/button/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/button/span</value>
+   </webElementXpaths>
+</WebElementEntity>
