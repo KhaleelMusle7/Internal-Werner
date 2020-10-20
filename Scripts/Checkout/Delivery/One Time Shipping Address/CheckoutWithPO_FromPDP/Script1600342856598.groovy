@@ -37,5 +37,14 @@ CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithPO'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
 
+CustomKeywords.'customKeywords.OrderConfirmation.verifyPageTitle'()
+
+String orderNumber = CustomKeywords.'customKeywords.OrderConfirmation.getOrderNumber'()
+
+CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
+
+CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
+
+
 WebUI.closeBrowser()
 

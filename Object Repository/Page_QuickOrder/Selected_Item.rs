@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Selected_Item</name>
+   <tag></tag>
+   <elementGuidId>4423f09f-3cbe-4aed-9e3a-7acd5dd64927</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tst_quickOrderWidget_autocomplete30d57236-a6b2-452a-8447-abf1007dfd65</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

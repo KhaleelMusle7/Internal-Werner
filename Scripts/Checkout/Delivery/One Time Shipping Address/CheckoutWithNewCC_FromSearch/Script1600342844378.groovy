@@ -1,3 +1,6 @@
+import org.eclipse.persistence.internal.jpa.parsing.jpql.antlr.JPQLParser.orderByClause_scope
+
+
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
@@ -23,5 +26,13 @@ CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithNewCC'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
 
-//WebUI.closeBrowser()
+CustomKeywords.'customKeywords.OrderConfirmation.verifyPageTitle'()
+
+String orderNumber = CustomKeywords.'customKeywords.OrderConfirmation.getOrderNumber'()
+
+CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
+
+CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
+
+WebUI.closeBrowser()
 

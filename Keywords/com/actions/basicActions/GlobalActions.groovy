@@ -17,6 +17,9 @@ public class GlobalActions {
 		TestObject loadingSpinner = findTestObject('Page_ChangeCustomer/loader')
 		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.ElementsTimeOut)
 	}
+	/***
+	 * @author khaleel Musleh
+	 */
 
 	public static void changeFulfilmentMethodToPickUp(){
 		BasicActions.clickElement(findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod'))
@@ -24,9 +27,14 @@ public class GlobalActions {
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/a_closeIcon'))
 	}
 
+	/***
+	 * @author khaleel Musleh
+	 * @param element
+	 */
 	public static void changeFulfilmentMethodToDelivery(){
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/span_fulfilmentMethod'))
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/label_Delivery'))
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/a_closeIcon'))
 	}
+	
 }

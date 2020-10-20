@@ -1,5 +1,7 @@
 package com.actions.basicActions
 import org.openqa.selenium.WebElement
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
@@ -22,7 +24,7 @@ public class BasicActions {
 	 * Write the given text to the given element
 	 * @param element
 	 * @param text
-	 * @author Iman Abu Abiah
+	 * @author khaleel Musleh
 	 */
 	public static void writeText (TestObject element, String text){
 		WebUI.setText(element, text)
@@ -32,7 +34,7 @@ public class BasicActions {
 	 * Click on the given index from the given elementList
 	 * @param elementList
 	 * @param index
-	 * @author Iman Abu Abiah
+	 *  @author khaleel Musleh
 	 */
 	public static void clickElementAtIndex(TestObject elementList, int index){
 		List<WebElement> listOfElements = WebUiCommonHelper.findWebElements(elementList, GlobalVariable.elementTimeOut)
@@ -43,7 +45,7 @@ public class BasicActions {
 	/**
 	 * Check the Checkbox if not checked
 	 * @param element
-	 * @author Iman Abu Abiah
+	 *  @author khaleel Musleh
 	 */
 	public static void checkCheckbox(TestObject element, TestObject checkbox){
 		String checked = WebUI.getAttribute(element, 'value')
@@ -54,7 +56,7 @@ public class BasicActions {
 	/**
 	 * Ucheck the Checkbox if checked
 	 * @param element
-	 * @author Iman Abu Abiah
+	 *  @author khaleel Musleh
 	 */
 	public static void unCheckCheckbox(TestObject element, TestObject checkbox){
 		String checked = WebUI.getAttribute(element, 'value')
@@ -66,7 +68,7 @@ public class BasicActions {
 	 * Select from the drop-down list based on the given label
 	 * @param element
 	 * @param label
-	 * @author Iman Abu Abiah
+	 *  @author khaleel Musleh
 	 */
 	public static void selectFromDropDownListByLabel(TestObject element, String label){
 		WebUI.selectOptionByLabel(element, label, false)
@@ -76,9 +78,11 @@ public class BasicActions {
 	 * Select from the drop-down list based on the given index
 	 * @param element
 	 * @param index
-	 * @author Iman Abu Abiah
+	 *  @author khaleel Musleh
 	 */
 	public static void selectFromDropDownListByIndex(TestObject element, int index){
 		WebUI.selectOptionByIndex(element, index)
 	}
+
+	
 }

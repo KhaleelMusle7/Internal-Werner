@@ -114,4 +114,9 @@
       <initValue>30</initValue>
       <name>ElementsTimeOut</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/Orders'</initValue>
+      <name>OrderHistory_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

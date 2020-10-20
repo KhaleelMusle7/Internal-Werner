@@ -31,28 +31,27 @@ public class PLPKeywords {
 			TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
 		WebUI.click(randomButton)
 	}
-	
+
 	@Keyword
-    clickRandomAddToCart() {
-		
-				WebUI.verifyElementVisible(findTestObject('Object Repository/Page_PLP/Span_addToCart'))
-				List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_PLP/Span_addToCart'),GlobalVariable.ElementsTimeOut)
-				Random rand = new Random();
-				int randomButtonIndex ;
-		
-				WebElement randomButtonElement = null;
-		
-				while({
-					randomButtonIndex = rand.nextInt(addToCartButtons.size());
-					randomButtonElement = addToCartButtons.get(randomButtonIndex);
-		
-					randomButtonElement.getAttribute("disabled") == "disabled"
-				}()) continue
-		
-					TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
-		
-		
-				WebUI.click(randomButton)
-					}
-	
+	clickRandomAddToCart() {
+
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_PLP/Span_addToCart'))
+		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_PLP/Span_addToCart'),GlobalVariable.ElementsTimeOut)
+		Random rand = new Random();
+		int randomButtonIndex ;
+
+		WebElement randomButtonElement = null;
+
+		while({
+			randomButtonIndex = rand.nextInt(addToCartButtons.size());
+			randomButtonElement = addToCartButtons.get(randomButtonIndex);
+
+			randomButtonElement.getAttribute("disabled") == "disabled"
+		}()) continue
+
+			TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
+
+
+		WebUI.click(randomButton)
+	}
 }

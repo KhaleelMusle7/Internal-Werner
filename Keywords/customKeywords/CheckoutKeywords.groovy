@@ -1,15 +1,14 @@
 package customKeywords
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import customKeywords.Navigations
+import internal.GlobalVariable as GlobalVariable
 import com.actions.basicActions.GlobalActions
 import com.actions.checkoutActions.AddressesActions
 import com.actions.checkoutActions.PaymentActions
 import com.actions.checkoutActions.ReviewActions
 import com.actions.checkoutActions.ShippingActions
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-import internal.GlobalVariable
+import com.actions.myAccountActions.OrderHistoryActions
+import com.kms.katalon.entity.global.GlobalVariableEntity
 
 public class CheckoutKeywords {
 
@@ -17,7 +16,8 @@ public class CheckoutKeywords {
 	 * This keyword will do the following:
 	 * 1. Uncheck the use ship-to checkbox
 	 * 2. Fill the ship one-time shipping address fields
-	 * 3. Click on save button
+	 * 3
+	 import com.kms.katalon.entity.global.GlobalVariableEntity. Click on save button
 	 * 4. Proceed to the next step
 	 * Note: if one-time shipping address already entered, then only the last step will be applied
 	 * @author Iman Abu Abiah
@@ -139,5 +139,11 @@ public class CheckoutKeywords {
 	def ReviewStep(){
 		ReviewActions.clickSubmitOrder()
 		GlobalActions.WaitForLoaderToFinish()
+	}
+
+	@Keyword
+	def verifyOrderPlaced(String orderNumber) {
+
+		OrderHistoryActions.navigateToSpecificOrder(orderNumber, 0)
 	}
 }
