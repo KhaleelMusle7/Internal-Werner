@@ -25,7 +25,7 @@ public class ChangeCustomerKeywords {
 	 * @author Iman Abu Abiah
 	 */
 	@Keyword
-	def ChangeCustomerByCustomerNumber (String billToCustomerNumber, String shipToCustomerNumber){
+	def ChangeCustomerByCustomerNumber (String billToCustomerNumber, String shipToCustomerNumber) {
 		ChangeCustomerActions.selectBillToAddressByCustomer(billToCustomerNumber)
 		ChangeCustomerActions.selectShipToAddressByCustomer(shipToCustomerNumber)
 		ChangeCustomerActions.clickChangeCustomerButton()

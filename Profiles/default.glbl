@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/'</initValue>
       <name>URL_Site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/ChangeCustomer'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/ChangeCustomer'</initValue>
       <name>URL_ChangeCustomer</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -113,6 +113,26 @@
       <description></description>
       <initValue>30</initValue>
       <name>ElementsTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1503'</initValue>
+      <name>Customer_Billto</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'17874'</initValue>
+      <name>Customer_Shipto</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://wernerelectric-qa.xngage.net/OrderApproval'</initValue>
+      <name>OrderApproval_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WEB001492'</initValue>
+      <name>OrderApproval_OrderNumber</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

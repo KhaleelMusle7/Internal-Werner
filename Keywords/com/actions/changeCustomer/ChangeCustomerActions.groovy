@@ -37,16 +37,26 @@ public class ChangeCustomerActions {
 		TestObject billToDropDown = findTestObject('Page_ChangeCustomer/input_selectBillToList')
 		BasicActions.clickElement(billToDropDown)
 		BasicActions.writeText(billToDropDown, customerNumber)
-		TestObject billToList = findTestObject('Page_ChangeCustomer/BillingAddressDropdown')
-		BasicActions.clickElementAtIndex(billToList, 0)
+		TestObject billToList = findTestObject('Object Repository/Page_ChangeCustomer/li_Select Bill-To Options')
+		WebUI.waitForElementVisible(billToList, GlobalVariable.ElementsTimeOut)
+		WebUI.click(billToList)
 	}
 
-	public static void selectShipToAddressByCustomer (String customerNumber){
-		WebUI.click(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
+	public static void selectShipToAddressByCustomer (String shipToNumber){
+		TestObject shipToDropDown = findTestObject('Page_ChangeCustomer/input_selectShipToList')
+		BasicActions.clickElement(shipToDropDown)
+		BasicActions.writeText(shipToDropDown, shipToNumber)
+		TestObject shipToList = findTestObject('Page_ChangeCustomer/ShippingAddressDropDown')
+		WebUI.waitForElementVisible(shipToList, GlobalVariable.ElementsTimeOut)
+		WebUI.click(shipToList)
+		
+		
+		/*WebUI.click(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
 		WebUI.setText(findTestObject('Page_ChangeCustomer/input_selectShipToList'), customerNumber)
 		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/ShippingAddressDropDown'), 30)
 		WebElement firstShipTo = ShiplistElements.get(0)
-		firstShipTo.click()
+		Thread.sleep(1000)
+		firstShipTo.click()*/
 	}
 
 	public static void selectFulfillmentMethod (String fulfillmentMethod){

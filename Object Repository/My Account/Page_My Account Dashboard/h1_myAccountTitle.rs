@@ -6,16 +6,16 @@
    <elementGuidId>c5b52ced-8748-44c7-8bbc-3c0ed40fc117</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h1.page-title</value>
+         <key>XPATH</key>
+         <value>//div[@id='nwrap']/div/div[2]/div[2]/div/div/div/h1</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@class = 'page-title' and (text() = 'My Account' or . = 'My Account')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='nwrap']/div/div[2]/div[2]/div/div/div/h1</value>
+         <key>CSS</key>
+         <value>h1.page-title</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

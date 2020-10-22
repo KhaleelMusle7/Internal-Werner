@@ -83,6 +83,4 @@ public class BasicActions {
 	public static void selectFromDropDownListByIndex(TestObject element, int index){
 		WebUI.selectOptionByIndex(element, index)
 	}
-
-	
 }

@@ -36,5 +36,4 @@ public class GlobalActions {
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/label_Delivery'))
 		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/a_closeIcon'))
 	}
-	
 }
