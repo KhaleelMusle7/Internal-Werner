@@ -3,7 +3,7 @@
    <description></description>
    <name>label_Delivery</name>
    <tag></tag>
-   <elementGuidId>2fa000a8-ebd7-4f77-a270-034a4837d535</elementGuidId>
+   <elementGuidId>61e052d5-8c60-4817-a794-2e2cf4519258</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

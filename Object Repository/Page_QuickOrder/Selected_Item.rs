@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tst_quickOrderWidget_autocomplete30d57236-a6b2-452a-8447-abf1007dfd65</value>
+         <value>ul[class=&quot;k-list k-reset&quot;] > li[class=&quot;k-item&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

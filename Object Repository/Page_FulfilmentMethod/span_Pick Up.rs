@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Pick Up</name>
    <tag></tag>
-   <elementGuidId>72cb478c-2da8-449e-9292-c94f4304a244</elementGuidId>
+   <elementGuidId>6fcde332-12aa-4acd-8125-af06398b32d6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

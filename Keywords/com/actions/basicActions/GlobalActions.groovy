@@ -22,18 +22,24 @@ public class GlobalActions {
 	 */
 
 	public static void changeFulfilmentMethodToPickUp(){
-		BasicActions.clickElement(findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod'))
-		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/label_Pick Up'))
-		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/a_closeIcon'))
+		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
+		BasicActions.clickElement(fulfillmentFromHeader)
+		TestObject pickUpOption = findTestObject('Page_FulfilmentMethod/label_Pick Up')
+		BasicActions.clickElement(pickUpOption)
+		TestObject closeIcon = findTestObject('Page_FulfilmentMethod/a_closeIcon')
+		BasicActions.clickElement(closeIcon)
 	}
 
-	/***
-	 * @author khaleel Musleh
-	 * @param element
+	/**
+	 * This function will change the fulfillment to delivery from the header
+	 * @author Iman Abu Abiah
 	 */
 	public static void changeFulfilmentMethodToDelivery(){
-		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/span_fulfilmentMethod'))
-		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/label_Delivery'))
-		BasicActions.clickElement(findTestObject('Page_FulfilmentMethod/a_closeIcon'))
+		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
+		BasicActions.clickElement(fulfillmentFromHeader)
+		TestObject deliveryOption = findTestObject('Page_FulfilmentMethod/label_Delivery')
+		BasicActions.clickElement(deliveryOption)
+		TestObject closeIcon = findTestObject('Page_FulfilmentMethod/a_closeIcon')
+		BasicActions.clickElement(closeIcon)
 	}
 }

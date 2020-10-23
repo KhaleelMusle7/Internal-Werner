@@ -3,8 +3,12 @@
    <description></description>
    <name>span_fulfilmentMethod</name>
    <tag></tag>
-   <elementGuidId>59eb71c3-3b60-4945-998d-c21953f34eaa</elementGuidId>
+   <elementGuidId>a01e85a9-1c05-4dcc-a242-b4015671b0b1</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Ship' or . = 'Ship')]</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;top-header-nav&quot;]/div[3]/div/div[1]/div/button/i</value>
@@ -12,10 +16,6 @@
       <entry>
          <key>CSS</key>
          <value>button.change-fulfillment-method.button.link.secondary > span</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Ship' or . = 'Ship')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

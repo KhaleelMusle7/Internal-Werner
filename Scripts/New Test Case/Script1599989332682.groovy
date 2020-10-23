@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_FulfilmentMethod/span_Ship'))
+WebUI.click(findTestObject('null'))
 
 
 
@@ -29,9 +29,9 @@ WebUI.setText(findTestObject('Page_Checkout_ReviewAndPay/Shipping/PickUp/textare
 
 WebUI.click(findTestObject('Page_Checkout_ReviewAndPay/Shipping/PickUp/label_Tomorrow'))
 
-WebUI.click(findTestObject('Page_FulfilmentMethod/span_Pick Up'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_FulfilmentMethod/label_Delivery'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_FulfilmentMethod/label_Pick Up'))
+WebUI.click(findTestObject('null'))
 

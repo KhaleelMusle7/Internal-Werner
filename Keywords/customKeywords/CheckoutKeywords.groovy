@@ -52,7 +52,6 @@ public class CheckoutKeywords {
 	@Keyword
 	def AddressesStepWithPickUpAddress (){
 		GlobalActions.changeFulfilmentMethodToPickUp()
-		GlobalActions.changeFulfilmentMethodToDelivery()
 		AddressesActions.clickNextButton()
 	}
 

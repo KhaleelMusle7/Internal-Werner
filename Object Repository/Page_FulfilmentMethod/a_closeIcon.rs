@@ -3,7 +3,7 @@
    <description></description>
    <name>a_closeIcon</name>
    <tag></tag>
-   <elementGuidId>69375315-b3a7-45f0-a2ca-a377a4632e0a</elementGuidId>
+   <elementGuidId>04802fa3-4b64-460f-a866-abe1e85ff739</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

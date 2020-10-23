@@ -54,4 +54,27 @@ public class PLPKeywords {
 
 		WebUI.click(randomButton)
 	}
+	
+	@Keyword
+	def clickRandomitem(TestObject randomItem) {
+		
+				WebUI.verifyElementVisible(findTestObject(randomItem))
+				List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject(randomItem),GlobalVariable.ElementsTimeOut)
+				Random rand = new Random();
+				int randomButtonIndex ;
+		
+				WebElement randomButtonElement = null;
+		
+				while({
+					randomButtonIndex = rand.nextInt(addToCartButtons.size());
+					randomButtonElement = addToCartButtons.get(randomButtonIndex);
+		
+					randomButtonElement.getAttribute("disabled") == "disabled"
+				}()) continue
+		
+					TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
+		
+		
+				WebUI.click(randomButton)
+			}
 }

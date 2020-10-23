@@ -1,11 +1,12 @@
 package com.actions.myAccountActions
-
+import customKeywords.PLPKeywords
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -25,14 +26,17 @@ import internal.GlobalVariable
 public class QuickOrderActions {
 	
 	public static void expandQuickOrder() {
-		WebUI.mouseOver(findTestObject('Object Repository/Page_QuickOrder/Span_QuickOrder'))
+		WebUI.mouseOver(findTestObject('Page_QuickOrder/Span_QuickOrderOverlay'))
 	}
 	
-	public static void addItem() {
+	public static void addRandomItem() {
 		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
 		WebUI.setText(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'), GlobalVariable.Search_term)
-		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
-		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
+		//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'), GlobalVariable.ElementsTimeOut)
+		BasicActions.clickElementAtIndex(findTestObject('Object Repository/Page_QuickOrder/Selected_Item'), 0)
+		//WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
+//		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
+//		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
 	}
 	
 	public static void addToCart() {

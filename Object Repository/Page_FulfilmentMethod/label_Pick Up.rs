@@ -3,7 +3,7 @@
    <description></description>
    <name>label_Pick Up</name>
    <tag></tag>
-   <elementGuidId>9bc479e3-f3b9-45ad-8552-33c20ee811ea</elementGuidId>
+   <elementGuidId>2d54957b-7fba-4106-b99c-d749df624b01</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
