@@ -24,10 +24,12 @@ import internal.GlobalVariable
 public class OrderHistoryActions {
 
 
-	public static void navigateToSpecificOrder(String orderNumber, int index) {
+	@Keyword
+	def static navigateToSpecificOrder(String orderNumber) {
 		SearchActions.searchForOrder(orderNumber)
 	}
-	public static void expandSearchForm() {
+	@Keyword
+	def static expandSearchForm() {
 		WebUI.click(findTestObject('Object Repository/Page_Order History/label_Search Orders History'))
 	}
 
@@ -35,9 +37,10 @@ public class OrderHistoryActions {
 	 * Writes a Search Term for the order number
 	 * VM Specific description. You can write Order#, PO or release in this field
 	 * @param orderNumber
-	 * @author Inrahim Shawahni
+	 * @author Ibrahim Shawahni
 	 */
-	public static void fillOrderNumberField(String orderNumber) {
+	@Keyword
+	def static fillOrderNumberField(String orderNumber) {
 		WebUI.setText(findTestObject('Object Repository/Page_Order History/input_orders-page-search'), orderNumber)
 	}
 
@@ -45,7 +48,8 @@ public class OrderHistoryActions {
 	 * Clicks on Search button in the Search Orders Widget
 	 * @author Ibrahim Shawahni
 	 */
-	public static void clickSearchButton() {
+	@Keyword
+	def static clickSearchButton() {
 		WebUI.click(findTestObject('Object Repository/Page_Order History/button_Search'))
 	}
 
@@ -53,8 +57,15 @@ public class OrderHistoryActions {
 	 * Clicks on Order number in order to navigate to Order Details page
 	 * @author Ibrahim Shawahni
 	 */
-	public static void clickOrderNumber() {
+	@Keyword
+	def clickOrderNumber() {
 		WebUI.click(findTestObject('Object Repository/Page_Order History/orderNumber'))
+	}
+	
+	@Keyword
+	def static reorder() {
+		WebUI.click(findTestObject('Object Repository/Page_Order History/button_ordernumber'))
+		WebUI.click(findTestObject('Object Repository/Page_Order History/button_reorder'))
 	}
 }
 

@@ -24,22 +24,22 @@ import com.kms.katalon.entity.global.GlobalVariableEntity
 import internal.GlobalVariable
 
 public class QuickOrderActions {
-	
+
 	public static void expandQuickOrder() {
 		WebUI.mouseOver(findTestObject('Page_QuickOrder/Span_QuickOrderOverlay'))
 	}
-	
+
 	public static void addRandomItem() {
 		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
 		WebUI.setText(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'), GlobalVariable.Search_term)
 		//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'), GlobalVariable.ElementsTimeOut)
 		BasicActions.clickElementAtIndex(findTestObject('Object Repository/Page_QuickOrder/Selected_Item'), 0)
 		//WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
-//		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
-//		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
+		//		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
+		//		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
 	}
-	
+
 	public static void addToCart() {
 		WebUI.click(findTestObject('Object Repository/Page_QuickOrder/addToCart'))
-	}		
+	}
 }

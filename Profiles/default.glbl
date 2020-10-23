@@ -154,4 +154,9 @@
       <initValue>5</initValue>
       <name>Elements_Absence_TimeOut</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'S6201263.1'</initValue>
+      <name>OrderHistory_OrderNumber</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

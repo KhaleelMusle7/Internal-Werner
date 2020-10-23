@@ -48,7 +48,7 @@ public class CartActions {
 		TestObject removeAllItemsButton = findTestObject('Object Repository/Page_Cart/button_Remove All Items')
 		BasicActions.clickElement(removeAllItemsButton)
 	}
-	
+
 	/***
 	 * Clicks on Delete button in the displayed confirmation modal when the user clicks on Remove All button
 	 * @author Ibrahim Shawahni

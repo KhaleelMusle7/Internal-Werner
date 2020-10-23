@@ -1,8 +1,9 @@
 package com.actions.searchActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.actions.myAccountActions.OrderHistoryActions
+
 import com.actions.basicActions.BasicActions
 import com.actions.checkoutActions.Checkout_Actions
+import com.actions.myAccountActions.OrderHistoryActions
 import com.kms.katalon.core.testobject.TestObject
 
 public class SearchActions {
@@ -31,7 +32,7 @@ public class SearchActions {
 	 * @author khaleel Musleh
 	 */
 	
-	public static void searchForOrder(String orderNumber) {
+	def static searchForOrder(String orderNumber) {
 		OrderHistoryActions.expandSearchForm()
 		OrderHistoryActions.fillOrderNumberField(orderNumber)
 		OrderHistoryActions.clickSearchButton()
