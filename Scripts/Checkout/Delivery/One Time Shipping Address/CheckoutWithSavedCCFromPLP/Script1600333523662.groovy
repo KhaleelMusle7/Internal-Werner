@@ -8,11 +8,15 @@ CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userNa
 
 CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
 
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
 CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.PLP_URL)
 
 CustomKeywords.'customKeywords.PLPKeywords.clickRandomAddToCart'() 
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithOneTimeShippingAddress'()
 

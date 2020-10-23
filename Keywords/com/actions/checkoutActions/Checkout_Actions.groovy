@@ -34,6 +34,4 @@ public class Checkout_Actions {
 			TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
 		WebUI.click(randomButton)
 	}
-	
-
 }

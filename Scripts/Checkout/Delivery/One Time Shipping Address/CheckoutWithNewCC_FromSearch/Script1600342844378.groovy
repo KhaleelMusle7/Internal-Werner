@@ -1,6 +1,6 @@
 import org.eclipse.persistence.internal.jpa.parsing.jpql.antlr.JPQLParser.orderByClause_scope
 
-
+import com.actions.checkoutActions.CartActions
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
@@ -12,11 +12,15 @@ CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userNa
 
 CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
 
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
 CustomKeywords.'customKeywords.SearchKeywords.PerformSearch'(GlobalVariable.Search_term)
 
 CustomKeywords.'customKeywords.SearchKeywords.AddToCartFromSearch'()
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithOneTimeShippingAddress'()
 
@@ -35,4 +39,3 @@ CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderH
 CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
 
 WebUI.closeBrowser()
-

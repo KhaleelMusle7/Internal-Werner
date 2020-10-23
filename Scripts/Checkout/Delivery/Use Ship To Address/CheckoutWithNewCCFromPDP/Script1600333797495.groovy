@@ -40,11 +40,15 @@ CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userNa
 
 CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
 
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
 CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.PDP_URL)
 
 CustomKeywords.'customKeywords.PDPKeywords.AddToCartFromPDP'()
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithDeliveryAddress'()
 

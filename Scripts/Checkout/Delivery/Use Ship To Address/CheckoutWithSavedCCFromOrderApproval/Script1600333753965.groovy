@@ -8,13 +8,17 @@ CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userNa
 
 CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomerByCustomerNumber'(GlobalVariable.Customer_Billto, GlobalVariable.Customer_Shipto)
 
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
 CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderApproval_URL)
 
 CustomKeywords.'com.helpers.MyAccountHelpers.OrderApprovalHelpers.navigateToOrderApprovalDetailsForSpecificOrder'(GlobalVariable.OrderApproval_OrderNumber)
 
 CustomKeywords.'com.actions.myAccountActions.OrderApprovalDetailsActions.clickApproveOrder'()
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithDeliveryAddress'()
 

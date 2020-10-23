@@ -8,18 +8,19 @@ import com.kms.katalon.core.annotation.Keyword
 import internal.GlobalVariable
 
 public class Navigations {
+	
 	/**
-	 * Checkout with saved CC
+	 * Navigate to cart
+	 * @author Anas Salahat
 	 */
 	@Keyword
-	def NavigateToAddressesInCheckout (){
-
+	def static navigateToCart () {
 		NavigationActions.navigateToURL(GlobalVariable.URL_Cart)
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Cart/button_checkout'))
+		
 	}
 
 	@Keyword
-	def navigateToPage(String URL) {
+	def static navigateToPage(String URL) {
 		NavigationActions.navigateToURL(URL)
 	}
 }

@@ -139,4 +139,19 @@
       <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/Orders'</initValue>
       <name>OrderHistory_URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/MyLists'</initValue>
+      <name>MyLists_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'There are no items in your cart.\r\n'</initValue>
+      <name>emptyCartMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>Elements_Absence_TimeOut</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

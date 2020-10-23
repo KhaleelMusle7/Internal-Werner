@@ -20,14 +20,15 @@ CustomKeywords.'customKeywords.BrowserKeywords.OpenBrowser'()
 
 CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userName, GlobalVariable.password)
 
-//CustomKeywords.'customKeywords.Actions.SelectFulfillmentMethod'('pickup')
-//CustomKeywords.'customKeywords.Actions.SelectFulfillmentMethod'('Delivery')
-//CustomKeywords.'customKeywords.Actions.ChangeCustomer'()
-CustomKeywords.'customKeywords.SearchKeywords.PerformSearch'('shirt')
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
+CustomKeywords.'customKeywords.SearchKeywords.PerformSearch'(GlobalVariable.Search_term)
 
 CustomKeywords.'customKeywords.SearchKeywords.AddToCartFromSearch'()
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithPickUpAddress'()
 

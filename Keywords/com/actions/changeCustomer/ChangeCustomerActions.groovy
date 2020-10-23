@@ -28,35 +28,36 @@ public class ChangeCustomerActions {
 	}
 
 	/***
-	 * Select bill to/customer number based on the provided customer number
+	 * Select specific bill-to value
 	 * Call this function at change customer page
-	 * @param customerNumber
+	 * @param billToValue
 	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
 	 */
-	public static void selectBillToAddressByCustomer (String customerNumber){
+	public static void selectBillToAddressByCustomer (String billToValue){
 		TestObject billToDropDown = findTestObject('Page_ChangeCustomer/input_selectBillToList')
 		BasicActions.clickElement(billToDropDown)
-		BasicActions.writeText(billToDropDown, customerNumber)
+		BasicActions.writeText(billToDropDown, billToValue)
 		TestObject billToList = findTestObject('Object Repository/Page_ChangeCustomer/li_Select Bill-To Options')
 		WebUI.waitForElementVisible(billToList, GlobalVariable.ElementsTimeOut)
 		WebUI.click(billToList)
 	}
+	
+	/***
+	 * Select specific ship-to value
+	 * Call this function at change customer page
+	 * @param shipToValue
+	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
+	 */
 
-	public static void selectShipToAddressByCustomer (String shipToNumber){
+	public static void selectShipToAddressByCustomer (String shipToValue){
 		TestObject shipToDropDown = findTestObject('Page_ChangeCustomer/input_selectShipToList')
 		BasicActions.clickElement(shipToDropDown)
-		BasicActions.writeText(shipToDropDown, shipToNumber)
+		BasicActions.writeText(shipToDropDown, shipToValue)
 		TestObject shipToList = findTestObject('Page_ChangeCustomer/ShippingAddressDropDown')
 		WebUI.waitForElementVisible(shipToList, GlobalVariable.ElementsTimeOut)
 		WebUI.click(shipToList)
-		
-		
-		/*WebUI.click(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
-		WebUI.setText(findTestObject('Page_ChangeCustomer/input_selectShipToList'), customerNumber)
-		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/ShippingAddressDropDown'), 30)
-		WebElement firstShipTo = ShiplistElements.get(0)
-		Thread.sleep(1000)
-		firstShipTo.click()*/
 	}
 
 	public static void selectFulfillmentMethod (String fulfillmentMethod){

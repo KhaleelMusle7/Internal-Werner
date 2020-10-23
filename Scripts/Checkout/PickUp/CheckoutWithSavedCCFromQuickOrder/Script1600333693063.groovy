@@ -29,4 +29,6 @@ CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userNa
 
 CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
 
+CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
+
 CustomKeywords.'customKeywords.QuickOrder.addfromQuickOrder'()
