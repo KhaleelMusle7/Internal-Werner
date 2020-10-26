@@ -44,7 +44,7 @@ public class CartActions {
 	 * Clicks on Remove All Button
 	 * @author Anas Salahat
 	 */
-	public static void clickRemoveAllButton() {
+	def static clickRemoveAllButton() {
 		TestObject removeAllItemsButton = findTestObject('Object Repository/Page_Cart/button_Remove All Items')
 		BasicActions.clickElement(removeAllItemsButton)
 	}
@@ -54,7 +54,7 @@ public class CartActions {
 	 * @author Ibrahim Shawahni
 	 * @anas Salahat
 	 */
-	public static void clickConfirmDeleteCartButton() {
+	def static clickConfirmDeleteCartButton() {
 		TestObject confirmDeleteCartButton = findTestObject('Object Repository/Page_Cart/button_confirmDeleteCart')
 		WebUI.waitForElementClickable(confirmDeleteCartButton, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(confirmDeleteCartButton)

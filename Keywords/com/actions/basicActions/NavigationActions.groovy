@@ -26,7 +26,7 @@ public class NavigationActions {
 	 * @author khaleel Musleh
 	 * for navigate to any page
 	 */
-	public static void navigateToURL(String Url){
+	def static navigateToURL(String Url){
 		WebUI.navigateToUrl(Url);
 	}
 }

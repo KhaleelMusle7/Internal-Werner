@@ -7,7 +7,7 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 
 public class OrderApprovalDetailsActions {
-	
+
 	/**
 	 * Click on Approve Order button
 	 * @author Anas Salahat

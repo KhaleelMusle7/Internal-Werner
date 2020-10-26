@@ -1,8 +1,6 @@
 package com.actions.basicActions
 import org.openqa.selenium.WebElement
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-
+import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -14,9 +12,9 @@ public class BasicActions {
 	/***
 	 * Click on the given element
 	 * @param element
-	 * @author Iman Abu Abiah
+	 * @author Khaleel Musleh
 	 */
-	public static void clickElement(TestObject element){
+	def static  clickElement(TestObject element){
 		WebUI.click(element)
 	}
 
@@ -26,7 +24,7 @@ public class BasicActions {
 	 * @param text
 	 * @author khaleel Musleh
 	 */
-	public static void writeText (TestObject element, String text){
+	def static  writeText (TestObject element, String text){
 		WebUI.setText(element, text)
 	}
 
@@ -36,7 +34,7 @@ public class BasicActions {
 	 * @param index
 	 *  @author khaleel Musleh
 	 */
-	public static void clickElementAtIndex(TestObject elementList, int index){
+	def static  clickElementAtIndex(TestObject elementList, int index){
 		List<WebElement> listOfElements = WebUiCommonHelper.findWebElements(elementList, GlobalVariable.elementTimeOut)
 		WebElement targetElement = listOfElements.get(index)
 		targetElement.click()
@@ -47,7 +45,7 @@ public class BasicActions {
 	 * @param element
 	 *  @author khaleel Musleh
 	 */
-	public static void checkCheckbox(TestObject element, TestObject checkbox){
+	def static  checkCheckbox(TestObject element, TestObject checkbox){
 		String checked = WebUI.getAttribute(element, 'value')
 		if (checked.equalsIgnoreCase('false'))
 			clickElement(checkbox)
@@ -58,7 +56,7 @@ public class BasicActions {
 	 * @param element
 	 *  @author khaleel Musleh
 	 */
-	public static void unCheckCheckbox(TestObject element, TestObject checkbox){
+	def static  unCheckCheckbox(TestObject element, TestObject checkbox){
 		String checked = WebUI.getAttribute(element, 'value')
 		if (checked.equalsIgnoreCase('true'))
 			clickElement(checkbox)
@@ -70,7 +68,7 @@ public class BasicActions {
 	 * @param label
 	 *  @author khaleel Musleh
 	 */
-	public static void selectFromDropDownListByLabel(TestObject element, String label){
+	def static selectFromDropDownListByLabel(TestObject element, String label){
 		WebUI.selectOptionByLabel(element, label, false)
 	}
 
@@ -80,18 +78,17 @@ public class BasicActions {
 	 * @param index
 	 *  @author khaleel Musleh
 	 */
-	public static void selectFromDropDownListByIndex(TestObject element, int index){
+	def static selectFromDropDownListByIndex(TestObject element, int index){
 		WebUI.selectOptionByIndex(element, index)
 	}
-	
+
 	/***
 	 * Return test object text
 	 * @param object the selector represents the set of elements
 	 * @return text inside test object
-	 * @author Ibrahim Shawahni
 	 * @author Anas Salahat
 	 */
-	public static String getElementText(TestObject object) {
+	def static String getElementText(TestObject object) {
 		return WebUI.getText(object).trim()
 	}
 
@@ -103,7 +100,7 @@ public class BasicActions {
 	 * @author Ibrahim Shawahni
 	 * @author Anas Salahat
 	 */
-	public static String getElementTextAtIndex(TestObject object, int index) {
+	def static String getElementTextAtIndex(TestObject object, int index) {
 		List<WebElement> elementsList = WebUiCommonHelper.findWebElements(object, GlobalVariable.ElementsTimeOut)
 		WebElement elementAtIndex = elementsList.get(index);
 		String itemText = elementAtIndex.getText()

@@ -8,7 +8,7 @@ import internal.GlobalVariable
 
 
 class CartValidations {
-	
+
 	/**
 	 * Verifies the cart not have items
 	 * @author Ibrahim Shawahni

@@ -28,7 +28,7 @@ public class PDP_Actions {
 	 */
 
 
-	public static void clickAddToCart(){
+	def static clickAddToCart(){
 
 		Checkout_Actions.writeQuantity(findTestObject("Object Repository/PDP/qty_feild"),GlobalVariable.qty)
 		Checkout_Actions.clickAddToCart(findTestObject("Object Repository/PDP/addToCart"))

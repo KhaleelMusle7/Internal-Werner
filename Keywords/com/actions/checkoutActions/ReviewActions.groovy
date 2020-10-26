@@ -11,7 +11,7 @@ public class ReviewActions {
 	 * Click submit order button
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickSubmitOrder (){
+	def static clickSubmitOrder (){
 		TestObject submitButton = findTestObject('Page_Checkout_ReviewAndPay/Review/button_submitOrder')
 		BasicActions.clickElement(submitButton)
 	}

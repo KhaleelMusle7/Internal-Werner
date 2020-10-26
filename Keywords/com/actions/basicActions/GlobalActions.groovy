@@ -10,18 +10,17 @@ public class GlobalActions {
 
 	/***
 	 * @author khaleel Musleh
-	 * 
+	 *  wait for loader finish 
 	 */
-	public static void WaitForLoaderToFinish(){
-		//WebUI.waitForElementNotVisible(findTestObject('Page_ChangeCustomer/loader'), GlobalVariable.Timeout)
+	def static WaitForLoaderToFinish(){
 		TestObject loadingSpinner = findTestObject('Page_ChangeCustomer/loader')
 		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.ElementsTimeOut)
 	}
 	/***
+	 * This function will change the fulfillment to PickUp from the header
 	 * @author khaleel Musleh
 	 */
-
-	public static void changeFulfilmentMethodToPickUp(){
+	def static changeFulfilmentMethodToPickUp(){
 		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
 		BasicActions.clickElement(fulfillmentFromHeader)
 		TestObject pickUpOption = findTestObject('Page_FulfilmentMethod/label_Pick Up')
@@ -34,7 +33,7 @@ public class GlobalActions {
 	 * This function will change the fulfillment to delivery from the header
 	 * @author Iman Abu Abiah
 	 */
-	public static void changeFulfilmentMethodToDelivery(){
+	def static changeFulfilmentMethodToDelivery(){
 		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
 		BasicActions.clickElement(fulfillmentFromHeader)
 		TestObject deliveryOption = findTestObject('Page_FulfilmentMethod/label_Delivery')

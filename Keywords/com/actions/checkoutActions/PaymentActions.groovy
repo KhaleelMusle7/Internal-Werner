@@ -10,18 +10,11 @@ import internal.GlobalVariable
 
 public class PaymentActions {
 
-	//	public static void choosePaymentMethod(String paymentMethod){
-	//		if (paymentMethod.equalsIgnoreCase('cc'))
-	//			clickCCOption()
-	//		else
-	//			clickPOOption()
-	//	}
-
 	/**
 	 * Choose CC radio button as payment method
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickCCOption(){
+	def static clickCCOption(){
 		TestObject ccOption = findTestObject('Page_Checkout_ReviewAndPay/Payment/label_CC_option')
 		BasicActions.clickElement(ccOption)
 	}
@@ -30,7 +23,7 @@ public class PaymentActions {
 	 * Choose PO radio button as payment method
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickPOOption() {
+	def static clickPOOption() {
 		TestObject poOption = findTestObject('Page_Checkout_ReviewAndPay/Payment/label_PO_option')
 		BasicActions.clickElement(poOption)
 	}
@@ -39,7 +32,7 @@ public class PaymentActions {
 	 * select the first saved CC from credit card drop-down list
 	 * @author Iman Abu Abiah
 	 */
-	public static void selectSavedCC (){
+	def static selectSavedCC (){
 		TestObject ccDropDownList = findTestObject('Page_Checkout_ReviewAndPay/Payment/select_CC_dropDown')
 		BasicActions.clickElement(ccDropDownList)
 		BasicActions.selectFromDropDownListByIndex(ccDropDownList, 2)
@@ -49,7 +42,7 @@ public class PaymentActions {
 	 * select add new CC from credit card drop-down list
 	 * @author Iman Abu Abiah
 	 */
-	public static void selectNewCC (){
+	def static selectNewCC (){
 		TestObject ccDropDownList = findTestObject('Page_Checkout_ReviewAndPay/Payment/select_CC_dropDown')
 		BasicActions.clickElement(ccDropDownList)
 		BasicActions.selectFromDropDownListByIndex(ccDropDownList, 1)
@@ -59,7 +52,7 @@ public class PaymentActions {
 	 * Fill PO number field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtiePONumber(){
+	def static wrtiePONumber(){
 		TestObject poNumberField = findTestObject('Page_Checkout_ReviewAndPay/Payment/input_poNumber')
 		BasicActions.writeText(poNumberField, GlobalVariable.PO_Number)
 	}
@@ -68,7 +61,7 @@ public class PaymentActions {
 	 * New CC - Check save CC information checkbox
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickSaveCardCheckbox(){
+	def static clickSaveCardCheckbox(){
 		TestObject saveCCInfoCheckbox = findTestObject('Object Repository/Page_Checkout_ReviewAndPay/Payment/New_CC/input_saveCCInfoCheckbox')
 		TestObject checkboxLabel = findTestObject('Object Repository/Page_Checkout_ReviewAndPay/Payment/New_CC/label_saveCCInfoCheckbox')
 		BasicActions.checkCheckbox(saveCCInfoCheckbox, checkboxLabel)
@@ -78,7 +71,7 @@ public class PaymentActions {
 	 * New CC - Fill card name field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtieCardName(){
+	def static wrtieCardName(){
 		TestObject cardNameField = findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/input_cardName')
 		BasicActions.writeText(cardNameField, GlobalVariable.card_Name)
 	}
@@ -87,7 +80,7 @@ public class PaymentActions {
 	 * New CC - Fill card number field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtieCardNumber(){
+	def static wrtieCardNumber(){
 		TestObject cardNumberField = findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/input_cardNumber')
 		BasicActions.writeText(cardNumberField, GlobalVariable.CC_Number)
 	}
@@ -96,7 +89,7 @@ public class PaymentActions {
 	 * New CC - Fill CVV field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtieCVVForNewCC(){
+	def static wrtieCVVForNewCC(){
 		TestObject CVVField = findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/input_CVV')
 		BasicActions.writeText(CVVField, GlobalVariable.CC_CVV)
 	}
@@ -105,7 +98,7 @@ public class PaymentActions {
 	 * Saved CC - Fill CVV field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtieCVVForSavedCC(){
+	def static wrtieCVVForSavedCC(){
 		TestObject CVVField = findTestObject('Page_Checkout_ReviewAndPay/Payment/Saved_CC/CVV Field')
 		BasicActions.writeText(CVVField, GlobalVariable.CC_CVV)
 	}
@@ -114,7 +107,7 @@ public class PaymentActions {
 	 * New CC - Fill exp date field
 	 * @author Iman Abu Abiah
 	 */
-	public static void wrtieExpDate(){
+	def static wrtieExpDate(){
 		TestObject expDateField = findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/input_expDate')
 		BasicActions.writeText(expDateField, GlobalVariable.CC_Exp_Date)
 	}
@@ -123,7 +116,7 @@ public class PaymentActions {
 	 * Click next button in order to Proceed to the Review step
 	 * @author Iman Abu Abiah
 	 */
-	public  static clickNext() {
+	def static clickNext() {
 		TestObject nextButton = findTestObject('Page_Checkout_ReviewAndPay/Payment/button_NextReviewSubmitOrder')
 		BasicActions.clickElement(nextButton)
 	}

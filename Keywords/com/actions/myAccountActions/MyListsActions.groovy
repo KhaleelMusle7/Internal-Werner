@@ -12,7 +12,7 @@ import com.util.helpers.generalHelpers.RandomUtil
 import internal.GlobalVariable
 
 public class MyListsActions {
-	
+
 	/***
 	 * write random String in the list name field in create new list modal
 	 * @return the entered list name
@@ -25,7 +25,7 @@ public class MyListsActions {
 		BasicActions.writeText(listNameField, randomListName)
 		return randomListName
 	}
-	
+
 	/***
 	 * write random String in the list description field in create new list modal
 	 * @return the entered list description
@@ -38,7 +38,7 @@ public class MyListsActions {
 		BasicActions.writeText(listDescriptionField, randomListDescription)
 		return randomListDescription
 	}
-		
+
 	/***
 	 * Clicks on create list button in the create new list modal
 	 * @author Anas Salahat
@@ -48,7 +48,7 @@ public class MyListsActions {
 		TestObject createListButton = findTestObject('Object Repository/My Account/Page_My Lists/Create New List Modal/button_Create List')
 		BasicActions.clickElement(createListButton)
 	}
-	
+
 	/***
 	 * Navigates to the List Details page using the name of the list
 	 * @param listName 
@@ -61,7 +61,7 @@ public class MyListsActions {
 		Thread.sleep(2000);
 		clickListAtIndex(0);
 	}
-	
+
 	/***
 	 * Navigates to List Details page using the order of the list
 	 * @param index the order of the list in the page starting from 0
@@ -71,7 +71,7 @@ public class MyListsActions {
 	def static clickListAtIndex(int index) {
 		BasicActions.clickElementAtIndex(findTestObject('Object Repository/My Account/Page_My Lists/a_List Name'), index)
 	}
-	
+
 	/***
 	 * Writes a search term inside the search box of the My Lists page and waits for the results.
 	 * This method doesn't verify the returned results
@@ -82,8 +82,7 @@ public class MyListsActions {
 	def static writeSearchTerm(String searchTerm) {
 		TestObject searchField = findTestObject('Object Repository/My Account/Page_My Lists/input_Search Field')
 		WebUI.clearText(searchField)
-		WebUI.setText(searchField, searchTerm);
+		BasicActions.writeText(searchField, searchTerm);
 		GlobalActions.WaitForLoaderToFinish()
-		//WebUI.waitForElementNotVisible(findTestObject('Object Repository/Page_My Lists/loadingSpinner'), GlobalVariable.Elements_Absence_TimeOut);
 	}
 }

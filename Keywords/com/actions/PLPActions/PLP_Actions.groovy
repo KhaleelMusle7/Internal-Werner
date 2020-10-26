@@ -24,7 +24,7 @@ import internal.GlobalVariable
 
 public class PLP_Actions {
 
-	public static void clickRandomAddToCart(){
+	def static clickRandomAddToCart(){
 		Checkout_Actions.clickRandomAddToCart()
 	}
 }

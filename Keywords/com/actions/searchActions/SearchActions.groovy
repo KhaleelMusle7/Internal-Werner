@@ -13,7 +13,7 @@ public class SearchActions {
 	 * @param searchTerm
 	 * @author Iman Abu Abiah
 	 */
-	public static void searchForProduct (String searchTerm){
+	def static searchForProduct (String searchTerm){
 		TestObject searchIcon = findTestObject('Page_Search/span_searchIcon')
 		BasicActions.clickElement(searchIcon)
 		TestObject searchField = findTestObject('Page_Search/input_searchField')
@@ -24,14 +24,14 @@ public class SearchActions {
 	 * Click add to cat button and close the search auto-complete
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickAddToCart (){
+	def static clickAddToCart (){
 		Checkout_Actions.clickAddToCart(findTestObject('Page_Search/button_AddToCart'))
 	}
 
 	/***
 	 * @author khaleel Musleh
 	 */
-	
+
 	def static searchForOrder(String orderNumber) {
 		OrderHistoryActions.expandSearchForm()
 		OrderHistoryActions.fillOrderNumberField(orderNumber)

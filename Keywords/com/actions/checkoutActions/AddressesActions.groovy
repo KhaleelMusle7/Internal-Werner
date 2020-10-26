@@ -2,10 +2,8 @@ package com.actions.checkoutActions
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-
 import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class AddressesActions {
 
@@ -13,19 +11,17 @@ public class AddressesActions {
 	 * Uncheck use ship to address checkbox in order to use one time shipping address
 	 * @author Iman Abu Abiah
 	 */
-	public static void uncheckUseShipToCheckbox() {
-		// if (WebUI.verifyElementChecked(findTestObject('Page_Checkout_Addresses/label_useShipToCheckbox'), 1, FailureHandling.CONTINUE_ON_FAILURE))
+	def static uncheckUseShipToCheckbox() {
 		TestObject checboxInput = findTestObject('Page_Checkout_Addresses/input_useShipToCheckbox')
 		TestObject checkboxLabel = findTestObject('Page_Checkout_Addresses/label_useShipToCheckbox')
 		BasicActions.unCheckCheckbox(checboxInput, checkboxLabel)
-		// 'Page_Checkout_Addresses/label_useShipToCheckbox'
 	}
 
 	/**
 	 * Check use ship to address checkbox in order to use delivery address
 	 * @author Iman Abu Abiah
 	 */
-	public static void checkUseShipToCheckbox() {
+	def static checkUseShipToCheckbox() {
 		TestObject checkboxInput = findTestObject('Page_Checkout_Addresses/input_useShipToCheckbox')
 		TestObject checkboxLabel = findTestObject('Page_Checkout_Addresses/label_useShipToCheckbox')
 		BasicActions.checkCheckbox(checkboxInput, checkboxLabel)
@@ -35,7 +31,7 @@ public class AddressesActions {
 	 * Fill one time shipping address fields and save the information
 	 * @author Iman Abu Abiah
 	 */
-	public static void fillOneTimeShippingAddressForm() {
+	def static fillOneTimeShippingAddressForm() {
 		try{
 			TestObject companyNameField = findTestObject('Page_Checkout_Addresses/input_companyName')
 			BasicActions.writeText(companyNameField, "AutomationCompany Name")
@@ -66,7 +62,7 @@ public class AddressesActions {
 	 * Click save one time shipping address information button
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickSaveButtonInOneTimeForm() {
+	def static clickSaveButtonInOneTimeForm() {
 		TestObject saveButton = findTestObject('Page_Checkout_Addresses/button_Save')
 		BasicActions.clickElement(saveButton)
 	}
@@ -75,7 +71,7 @@ public class AddressesActions {
 	 * Click cancel button
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickCancelButtonInOneTimeForm() {
+	def static clickCancelButtonInOneTimeForm() {
 		TestObject cancelButton = findTestObject('Page_Checkout_Addresses/button_Cancel')
 		BasicActions.clickElement(cancelButton)
 	}
@@ -84,7 +80,7 @@ public class AddressesActions {
 	 * Click next button in order to Proceed to the shipping information step
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickNextButton (){
+	def static clickNextButton (){
 		TestObject nextButton = findTestObject('Page_Checkout_Addresses/button_nextShippingInformation')
 		BasicActions.clickElement(nextButton)
 	}

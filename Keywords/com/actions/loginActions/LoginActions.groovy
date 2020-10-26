@@ -13,7 +13,7 @@ public class LoginActions {
 	 * @param userName
 	 * @author Iman Abu Abiah
 	 */
-	public static void writeUserName (String userName){
+	def static writeUserName (String userName){
 		TestObject userNameField = findTestObject('Page_SignIn/input_userName')
 		BasicActions.clickElement(userNameField)
 		BasicActions.writeText(userNameField, userName)
@@ -24,7 +24,7 @@ public class LoginActions {
 	 * @param password
 	 * @author Iman Abu Abiah
 	 */
-	public static void writePassword (String password){
+	def static writePassword (String password){
 		TestObject passwordField = findTestObject('Page_SignIn/input_password')
 		BasicActions.clickElement(passwordField)
 		BasicActions.writeText(passwordField, password)
@@ -34,7 +34,7 @@ public class LoginActions {
 	 * Click on sign in button
 	 * @author Iman Abu Abiah
 	 */
-	public static void clickSignInButton(){
+	def static clickSignInButton(){
 		TestObject signInButton = findTestObject('Page_SignIn/button_SignIn')
 		BasicActions.clickElement(signInButton)
 	}

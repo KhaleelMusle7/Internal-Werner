@@ -1,4 +1,5 @@
 package com.actions.orderConfirmationActions
+import com.actions.basicActions.BasicActions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -26,7 +27,7 @@ public class OrderConfirmationActions {
 	/***
 	 * @author khaleel Musleh
 	 */
-	public static void verifyPageTitle(TestObject element ) {
+	def static verifyPageTitle(TestObject element ) {
 		WebUI.verifyElementPresent(element, GlobalVariable.ElementsTimeOut)
 	}
 
@@ -35,7 +36,7 @@ public class OrderConfirmationActions {
 	 * @param object
 	 * @author khaleel Musleh
 	 */
-	public static String getElementText(TestObject object) {
-		return WebUI.getText(object)
+	def static String getElementText(TestObject object) {
+		return BasicActions.writeText(object)
 	}
 }
