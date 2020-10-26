@@ -5,7 +5,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.actions.OrderConfirmationActions.OrderConfirmationActions
+import com.actions.orderConfirmationActions.OrderConfirmationActions
 import com.actions.basicActions.GlobalActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -26,7 +26,7 @@ public class OrderConfirmation {
 
 	@Keyword
 	def static verifyPageTitle() {
-		
+
 		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Order Confirmation/h1_Order Confirmation'))
 	}
 

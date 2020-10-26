@@ -14,3 +14,10 @@ build
 .classpath
 
 .project
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+settings/internal/
+/Profiles/Chrome Profile/

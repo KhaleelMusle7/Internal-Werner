@@ -12,7 +12,7 @@ CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
 CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderApproval_URL)
 
-CustomKeywords.'com.helpers.MyAccountHelpers.OrderApprovalHelpers.navigateToOrderApprovalDetailsForSpecificOrder'(GlobalVariable.OrderApproval_OrderNumber)
+CustomKeywords.'com.helpers.myAccountHelpers.OrderApprovalHelpers.navigateToOrderApprovalDetailsForSpecificOrder'(GlobalVariable.OrderApproval_OrderNumber)
 
 CustomKeywords.'com.actions.myAccountActions.OrderApprovalDetailsActions.clickApproveOrder'()
 

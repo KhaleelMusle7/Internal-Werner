@@ -1,4 +1,4 @@
-package com.validations.CheckoutValidations
+package com.validations.checkoutValidations
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.annotation.Keyword

@@ -25,11 +25,15 @@ public class BrowserKeywords {
 	/**
 	 * Open browser and maximize window
 	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
 	 */
 	@Keyword
 	def OpenBrowser() {
-		WebUI.openBrowser(GlobalVariable.URL_Site)
+		WebUI.openBrowser('')
+
 		WebUI.maximizeWindow()
+
+		WebUI.navigateToUrl(GlobalVariable.URL_Site)
 	}
 
 	/**

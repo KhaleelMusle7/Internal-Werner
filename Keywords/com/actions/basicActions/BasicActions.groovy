@@ -83,4 +83,30 @@ public class BasicActions {
 	public static void selectFromDropDownListByIndex(TestObject element, int index){
 		WebUI.selectOptionByIndex(element, index)
 	}
+	
+	/***
+	 * Return test object text
+	 * @param object the selector represents the set of elements
+	 * @return text inside test object
+	 * @author Ibrahim Shawahni
+	 * @author Anas Salahat
+	 */
+	public static String getElementText(TestObject object) {
+		return WebUI.getText(object).trim()
+	}
+
+	/***
+	 * Return element text from list of elements based on index
+	 * @param obj the selector represents the set of elements
+	 * @param index the order of the item
+	 * @return text inside test object at specific list index
+	 * @author Ibrahim Shawahni
+	 * @author Anas Salahat
+	 */
+	public static String getElementTextAtIndex(TestObject object, int index) {
+		List<WebElement> elementsList = WebUiCommonHelper.findWebElements(object, GlobalVariable.ElementsTimeOut)
+		WebElement elementAtIndex = elementsList.get(index);
+		String itemText = elementAtIndex.getText()
+		return itemText
+	}
 }

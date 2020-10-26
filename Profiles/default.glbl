@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/SignIn'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/SignIn'</initValue>
       <name>URL_SignIn</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -31,12 +31,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/MyAccount'</initValue>
       <name>URL_MyAccount</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/Cart'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/Cart'</initValue>
       <name>URL_Cart</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -71,7 +71,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/product/Leviton-278-S00'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/product/Leviton-278-S00'</initValue>
       <name>PDP_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -106,7 +106,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/catalog/Distribution-Equipment'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/catalog/Distribution-Equipment'</initValue>
       <name>PLP_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -126,7 +126,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/OrderApproval'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/OrderApproval'</initValue>
       <name>OrderApproval_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -136,12 +136,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/Orders'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/Orders'</initValue>
       <name>OrderHistory_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://wernerelectric-qa.xngage.net/MyAccount/MyLists'</initValue>
+      <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/MyLists'</initValue>
       <name>MyLists_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -158,5 +158,10 @@
       <description></description>
       <initValue>'S6201263.1'</initValue>
       <name>OrderHistory_OrderNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Rockwell Automation 800T-A2D1 30mm Momentary Push Button 800T PB'</initValue>
+      <name>Item_Name_For_List</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

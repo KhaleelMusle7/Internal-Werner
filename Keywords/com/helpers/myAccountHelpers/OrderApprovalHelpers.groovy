@@ -1,4 +1,4 @@
-package com.helpers.MyAccountHelpers
+package com.helpers.myAccountHelpers
 import com.actions.myAccountActions.OrderApprovalActions
 import com.kms.katalon.core.annotation.Keyword
 

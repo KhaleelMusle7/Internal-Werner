@@ -1,4 +1,4 @@
-package com.actions.OrderConfirmationActions
+package com.actions.orderConfirmationActions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
