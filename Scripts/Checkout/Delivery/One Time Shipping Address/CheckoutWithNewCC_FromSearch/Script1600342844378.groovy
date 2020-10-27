@@ -1,9 +1,3 @@
-import org.eclipse.persistence.internal.jpa.parsing.jpql.antlr.JPQLParser.orderByClause_scope
-
-import com.actions.checkoutActions.CartActions
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'customKeywords.BrowserKeywords.OpenBrowser'()

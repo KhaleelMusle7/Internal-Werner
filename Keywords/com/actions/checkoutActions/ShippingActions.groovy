@@ -24,7 +24,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickShipWhenAvailable (){
-		TestObject shipWhenAvailable = findTestObject('Page_Checkout_ReviewAndPay/Shipping/label_shipWhenAvailable_RadioButton')
+		TestObject shipWhenAvailable = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenAvailable_RadioButton')
 		BasicActions.clickElement(shipWhenAvailable)
 	}
 
@@ -33,7 +33,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickShipWhenComplete (){
-		TestObject shipWhenComplete = findTestObject('Page_Checkout_ReviewAndPay/Shipping/label_shipWhenComplete_RadioButton')
+		TestObject shipWhenComplete = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenComplete_RadioButton')
 		BasicActions.clickElement(shipWhenComplete)
 	}
 
@@ -43,7 +43,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static writeAttentionTo (String attentionTo){
-		TestObject attentionToField = findTestObject('Page_Checkout_ReviewAndPay/Shipping/input_AttentionToField')
+		TestObject attentionToField = findTestObject('Checkout/Page_ReviewAndPay/Shipping/input_AttentionToField')
 		BasicActions.clickElement(attentionToField)
 		BasicActions.writeText(attentionToField, attentionTo)
 	}
@@ -54,7 +54,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static writeShippingInstructions (String shippingInstructions){
-		TestObject shippingInstructionsField = findTestObject('Page_Checkout_ReviewAndPay/Shipping/input_ShippingInstructionsField')
+		TestObject shippingInstructionsField = findTestObject('Checkout/Page_ReviewAndPay/Shipping/input_ShippingInstructionsField')
 		BasicActions.clickElement(shippingInstructionsField)
 		BasicActions.writeText(shippingInstructionsField, shippingInstructions)
 	}
@@ -64,7 +64,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickNextButton (){
-		TestObject nextButton = findTestObject('Page_Checkout_ReviewAndPay/Shipping/button_nextPaymentInformation')
+		TestObject nextButton = findTestObject('Checkout/Page_ReviewAndPay/Shipping/button_nextPaymentInformation')
 		BasicActions.clickElement(nextButton)
 	}
 
@@ -73,7 +73,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickBackButton (){
-		TestObject backButton = findTestObject('Page_Checkout_ReviewAndPay/Shipping/button_backToAddresses')
+		TestObject backButton = findTestObject('Checkout/Page_ReviewAndPay/Shipping/button_backToAddresses')
 		BasicActions.clickElement(backButton)
 	}
 }

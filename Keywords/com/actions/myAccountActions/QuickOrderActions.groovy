@@ -26,16 +26,16 @@ import internal.GlobalVariable
 public class QuickOrderActions {
 
 	public static void expandQuickOrder() {
-		WebUI.mouseOver(findTestObject('Page_QuickOrder/Span_QuickOrderOverlay'))
+		WebUI.mouseOver(findTestObject('My Account/Page_QuickOrder/Span_QuickOrderOverlay'))
 	}
 
 	def static addRandomItem() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'))
-		BasicActions.writeText(findTestObject('Object Repository/Page_QuickOrder/Keyword_input'), GlobalVariable.Search_term)
-		BasicActions.clickElementAtIndex(findTestObject('Object Repository/Page_QuickOrder/Selected_Item'), 0)
+		BasicActions.clickElement(findTestObject('My Account/Page_QuickOrder/Keyword_input'))
+		BasicActions.writeText(findTestObject('My Account/Page_QuickOrder/Keyword_input'), GlobalVariable.Search_term)
+		BasicActions.clickElementAtIndex(findTestObject('My Account/Page_QuickOrder/Selected_Item'), 0)
 	}
 
 	def static addToCart() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_QuickOrder/addToCart'))
+		BasicActions.clickElement(findTestObject('My Account/Page_QuickOrder/addToCart'))
 	}
 }

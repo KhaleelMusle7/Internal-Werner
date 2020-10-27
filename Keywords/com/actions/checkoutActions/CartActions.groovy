@@ -8,7 +8,6 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.validations.checkoutValidations.CartValidations
 
-import customKeywords.CommonKeywords
 import customKeywords.Navigations
 import internal.GlobalVariable
 
@@ -20,7 +19,7 @@ public class CartActions {
 	 */
 	@Keyword
 	def clickCheckoutButton() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Cart/button_checkout'))
+		BasicActions.clickElement(findTestObject('Checkout/Page_Cart/button_checkout'))
 	}
 
 	/***
@@ -32,7 +31,7 @@ public class CartActions {
 	def clearCart() {
 		Navigations.navigateToCart()
 
-		if(CommonKeywords.isElementPresent(findTestObject('Object Repository/Page_Cart/button_Remove All Items'))) {
+		if(BasicActions.isElementPresent(findTestObject('Checkout/Page_Cart/button_Remove All Items'))) {
 			CartActions.clickRemoveAllButton()
 			CartActions.clickConfirmDeleteCartButton()
 		}
@@ -45,7 +44,7 @@ public class CartActions {
 	 * @author Anas Salahat
 	 */
 	def static clickRemoveAllButton() {
-		TestObject removeAllItemsButton = findTestObject('Object Repository/Page_Cart/button_Remove All Items')
+		TestObject removeAllItemsButton = findTestObject('Checkout/Page_Cart/button_Remove All Items')
 		BasicActions.clickElement(removeAllItemsButton)
 	}
 
@@ -55,7 +54,7 @@ public class CartActions {
 	 * @anas Salahat
 	 */
 	def static clickConfirmDeleteCartButton() {
-		TestObject confirmDeleteCartButton = findTestObject('Object Repository/Page_Cart/button_confirmDeleteCart')
+		TestObject confirmDeleteCartButton = findTestObject('Checkout/Page_Cart/button_confirmDeleteCart')
 		WebUI.waitForElementClickable(confirmDeleteCartButton, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(confirmDeleteCartButton)
 	}

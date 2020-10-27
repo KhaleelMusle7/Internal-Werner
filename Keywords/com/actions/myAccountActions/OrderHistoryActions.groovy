@@ -15,7 +15,7 @@ public class OrderHistoryActions {
 	}
 	@Keyword
 	def static expandSearchForm() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Order History/label_Search Orders History'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/label_Search Orders History'))
 	}
 
 	/***
@@ -26,7 +26,7 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def static fillOrderNumberField(String orderNumber) {
-		BasicActions.writeText(findTestObject('Object Repository/Page_Order History/input_orders-page-search'), orderNumber)
+		BasicActions.writeText(findTestObject('My Account/Page_Order History/input_orders-page-search'), orderNumber)
 	}
 
 	/***
@@ -35,7 +35,7 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def static clickSearchButton() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Order History/button_Search'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_Search'))
 	}
 
 	/***
@@ -44,13 +44,13 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def clickOrderNumber() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Order History/orderNumber'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/orderNumber'))
 	}
 
 	@Keyword
 	def static reorder() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Order History/button_ordernumber'))
-		BasicActions.clickElement(findTestObject('Object Repository/Page_Order History/button_reorder'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_ordernumber'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_reorder'))
 	}
 }
 

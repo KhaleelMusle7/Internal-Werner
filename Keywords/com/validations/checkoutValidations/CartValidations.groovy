@@ -16,7 +16,7 @@ class CartValidations {
 	 */
 	@Keyword
 	def static verifyCartIsEmpty() {
-		String emptyCartMessage = WebUI.getText(findTestObject('Object Repository/Page_Cart/div_cartMessageBody'))
+		String emptyCartMessage = WebUI.getText(findTestObject('Checkout/Page_Cart/div_cartMessageBody'))
 
 		String expectedMessage = GlobalVariable.emptyCartMessage
 

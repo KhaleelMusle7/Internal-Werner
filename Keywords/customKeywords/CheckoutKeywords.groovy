@@ -143,6 +143,6 @@ public class CheckoutKeywords {
 	@Keyword
 	def verifyOrderPlaced(String orderNumber) {
 
-		OrderHistoryActions.navigateToSpecificOrder(orderNumber, 0)
+		OrderHistoryActions.navigateToSpecificOrder(orderNumber)
 	}
 }

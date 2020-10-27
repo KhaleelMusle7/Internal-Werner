@@ -22,12 +22,12 @@ WebUI.click(findTestObject('null'))
 
 
 
-WebUI.click(findTestObject('Page_Checkout_ReviewAndPay/Shipping/PickUp/label_Today'))
+WebUI.click(findTestObject('Checkout/Page_ReviewAndPay/Shipping/PickUp/label_Today'))
 
-WebUI.setText(findTestObject('Page_Checkout_ReviewAndPay/Shipping/PickUp/textarea_orderNotes'), 
+WebUI.setText(findTestObject('Checkout/Page_ReviewAndPay/Shipping/PickUp/textarea_orderNotes'), 
     'orde notes')
 
-WebUI.click(findTestObject('Page_Checkout_ReviewAndPay/Shipping/PickUp/label_Tomorrow'))
+WebUI.click(findTestObject('Checkout/Page_ReviewAndPay/Shipping/PickUp/label_Tomorrow'))
 
 WebUI.click(findTestObject('null'))
 

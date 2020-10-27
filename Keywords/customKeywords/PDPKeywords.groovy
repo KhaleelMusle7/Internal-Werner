@@ -1,5 +1,5 @@
 package customKeywords
-import com.actions.PDPActions.PDP_Actions
+import com.actions.PDPActions.PDPActions
 import com.kms.katalon.core.annotation.Keyword
 
 public class PDPKeywords {
@@ -7,6 +7,6 @@ public class PDPKeywords {
 
 	@Keyword
 	def static AddToCartFromPDP (){
-		PDP_Actions.clickAddToCart()
+		PDPActions.clickAddToCart()
 	}
 }

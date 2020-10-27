@@ -6,6 +6,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.actions.orderConfirmationActions.OrderConfirmationActions
+import com.actions.basicActions.BasicActions
 import com.actions.basicActions.GlobalActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -26,12 +27,12 @@ public class OrderConfirmation {
 
 	@Keyword
 	def static verifyPageTitle() {
-
-		WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Order Confirmation/h1_Order Confirmation'))
+		//TODO Add another statement to check if the title text is equal "Order Confirmation"
+		WebUI.verifyElementVisible(findTestObject('Checkout/Page_Order Confirmation/h1_Order Confirmation'))
 	}
 
 	@Keyword
 	def static String getOrderNumber() {
-		return OrderConfirmationActions.getElementText(findTestObject('Object Repository/Page_Order Confirmation/orderNumber'))
+		return BasicActions.getElementText(findTestObject('Checkout/Page_Order Confirmation/orderNumber'))
 	}
 }

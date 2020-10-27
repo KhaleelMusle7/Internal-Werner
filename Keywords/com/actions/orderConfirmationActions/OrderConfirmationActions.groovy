@@ -31,12 +31,4 @@ public class OrderConfirmationActions {
 		WebUI.verifyElementPresent(element, GlobalVariable.ElementsTimeOut)
 	}
 
-	/***
-	 * 
-	 * @param object
-	 * @author khaleel Musleh
-	 */
-	def static String getElementText(TestObject object) {
-		return BasicActions.writeText(object)
-	}
 }

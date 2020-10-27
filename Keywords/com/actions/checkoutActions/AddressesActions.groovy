@@ -12,8 +12,8 @@ public class AddressesActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static uncheckUseShipToCheckbox() {
-		TestObject checboxInput = findTestObject('Page_Checkout_Addresses/input_useShipToCheckbox')
-		TestObject checkboxLabel = findTestObject('Page_Checkout_Addresses/label_useShipToCheckbox')
+		TestObject checboxInput = findTestObject('Checkout/Page_Addresses/input_useShipToCheckbox')
+		TestObject checkboxLabel = findTestObject('Checkout/Page_Addresses/label_useShipToCheckbox')
 		BasicActions.unCheckCheckbox(checboxInput, checkboxLabel)
 	}
 
@@ -22,8 +22,8 @@ public class AddressesActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static checkUseShipToCheckbox() {
-		TestObject checkboxInput = findTestObject('Page_Checkout_Addresses/input_useShipToCheckbox')
-		TestObject checkboxLabel = findTestObject('Page_Checkout_Addresses/label_useShipToCheckbox')
+		TestObject checkboxInput = findTestObject('Checkout/Page_Addresses/input_useShipToCheckbox')
+		TestObject checkboxLabel = findTestObject('Checkout/Page_Addresses/label_useShipToCheckbox')
 		BasicActions.checkCheckbox(checkboxInput, checkboxLabel)
 	}
 
@@ -33,23 +33,23 @@ public class AddressesActions {
 	 */
 	def static fillOneTimeShippingAddressForm() {
 		try{
-			TestObject companyNameField = findTestObject('Page_Checkout_Addresses/input_companyName')
+			TestObject companyNameField = findTestObject('Checkout/Page_Addresses/input_companyName')
 			BasicActions.writeText(companyNameField, "AutomationCompany Name")
 
-			TestObject addressOneField = findTestObject('Page_Checkout_Addresses/input_address1')
+			TestObject addressOneField = findTestObject('Checkout/Page_Addresses/input_address1')
 			BasicActions.writeText(addressOneField, "Automation Address one")
 
-			TestObject addressTwoField = findTestObject('Page_Checkout_Addresses/input_address2')
+			TestObject addressTwoField = findTestObject('Checkout/Page_Addresses/input_address2')
 			BasicActions.writeText(addressTwoField, "Automation Address two")
 
-			TestObject cityField = findTestObject('Page_Checkout_Addresses/input_city')
+			TestObject cityField = findTestObject('Checkout/Page_Addresses/input_city')
 			BasicActions.writeText(cityField, "New York")
 
-			TestObject stateField = findTestObject('Page_Checkout_Addresses/select_state')
+			TestObject stateField = findTestObject('Checkout/Page_Addresses/select_state')
 			BasicActions.clickElement(stateField)
 			BasicActions.selectFromDropDownListByLabel(stateField, "New York")
 
-			TestObject postalCodeField = findTestObject('Page_Checkout_Addresses/input_postalCode')
+			TestObject postalCodeField = findTestObject('Checkout/Page_Addresses/input_postalCode')
 			BasicActions.writeText(postalCodeField, "10167")
 
 			clickSaveButtonInOneTimeForm()
@@ -81,7 +81,7 @@ public class AddressesActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickNextButton (){
-		TestObject nextButton = findTestObject('Page_Checkout_Addresses/button_nextShippingInformation')
+		TestObject nextButton = findTestObject('Checkout/Page_Addresses/button_nextShippingInformation')
 		BasicActions.clickElement(nextButton)
 	}
 }

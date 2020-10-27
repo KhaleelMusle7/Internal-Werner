@@ -23,10 +23,10 @@ import org.openqa.selenium.Keys as Keys
 
 
 
-WebUI.setText(findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/input_CVV'), 
+WebUI.setText(findTestObject('Checkout/Page_ReviewAndPay/Payment/New_CC/input_CVV'), 
     '123')
 
-WebUI.click(findTestObject('Page_Checkout_ReviewAndPay/Payment/New_CC/label_saveCCInfoCheckbox'))
+WebUI.click(findTestObject('Checkout/Page_ReviewAndPay/Payment/New_CC/label_saveCCInfoCheckbox'))
 
 WebUI.setText(findTestObject('Page_ToReview/input_address1'), 
     'Address')
