@@ -1,14 +1,8 @@
 package customKeywords
 
 import com.actions.basicActions.GlobalActions
-import com.actions.checkoutActions.Checkout_Actions
-
 import com.actions.searchActions.SearchActions
 import com.kms.katalon.core.annotation.Keyword
-
-import internal.GlobalVariable
-
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 public class SearchKeywords {
 
 	/**

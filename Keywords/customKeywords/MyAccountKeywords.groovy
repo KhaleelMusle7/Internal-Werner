@@ -7,6 +7,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class MyAccountKeywords {
+	
 	/**
 	 * Verify that the title of my account page is displayed
 	 */

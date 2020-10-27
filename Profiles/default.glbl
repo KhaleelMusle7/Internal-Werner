@@ -161,7 +161,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Rockwell Automation 800T-A2D1 30mm Momentary Push Button 800T PB'</initValue>
+      <initValue>'A-B Rockwell 100S-C37EJ22BC 37 A Safety Cont'</initValue>
       <name>Item_Name_For_List</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

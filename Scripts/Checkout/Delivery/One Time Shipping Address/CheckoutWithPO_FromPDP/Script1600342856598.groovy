@@ -49,6 +49,5 @@ CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderH
 
 CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
 
-
-WebUI.closeBrowser()
+CustomKeywords.'customKeywords.BrowserKeywords.closeBrowser'()
 

@@ -14,7 +14,9 @@ CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.navigateToSpeci
 
 CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.reorder'()
 
-CustomKeywords.'customKeywords.Navigations.NavigateToAddressesInCheckout'()
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithPickUpAddress'()
 
@@ -32,4 +34,4 @@ CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderH
 
 CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
 
-WebUI.closeBrowser()
+CustomKeywords.'customKeywords.BrowserKeywords.closeBrowser'()

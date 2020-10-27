@@ -1,4 +1,4 @@
-import com.actions.myAccountActions.MyListsActions
+import com.actions.basicActions.BasicActions
 
 import internal.GlobalVariable as GlobalVariable
 
@@ -22,20 +22,30 @@ CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.clickAddItemsBut
 
 CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.writeSearchTerm'(GlobalVariable.Item_Name_For_List)
 
-String[] itemDetails = CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.selectSuggestedItemAtIndex'(4)
+String[] itemDetails = CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.selectFirstSuggestedItem'()
 
-/*
+CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.clickAddItemToListButton'()
 
-String[] itemDetails = ListDetailsActions.selectFirstSuggestedItem()
+CustomKeywords.'com.validations.myAccountValidations.ListDetailsValidations.verifyItemExistsInList'(itemDetails[0])
 
-ListDetailsActions.clickAddItemToListButton()
+CustomKeywords.'com.actions.myAccountActions.ListDetailsActions.clickAddListToCartButton'()
 
-ListDetailsValidation.verifyItemExistsInList(itemDetails[0])
+CustomKeywords.'customKeywords.Navigations.navigateToCart'()
 
-ListDetailsActions.clickAddListToCartButton()
+CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
-BradyCommonFunctions.waitToastModalToDisplay()
+CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStepWithPickUp'( GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
 
-Navigations.navigateToCartPage()
+CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithPO'()
 
-CommonHelpers.closeBrowser()*/
+CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
+
+CustomKeywords.'customKeywords.OrderConfirmation.verifyPageTitle'()
+
+String orderNumber = CustomKeywords.'customKeywords.OrderConfirmation.getOrderNumber'()
+
+CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
+
+CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
+
+CustomKeywords.'customKeywords.BrowserKeywords.closeBrowser'()

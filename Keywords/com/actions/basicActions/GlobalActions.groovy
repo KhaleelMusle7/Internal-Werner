@@ -16,6 +16,18 @@ public class GlobalActions {
 		TestObject loadingSpinner = findTestObject('Page_ChangeCustomer/loader')
 		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.ElementsTimeOut)
 	}
+	
+	/***
+	 * Waits for the Toaster message to be displayed.
+	 * This can be called after the action you are expecting to see toaster message as success indicator.
+	 * Call it after Add to Cart action for example.
+	 * @author Ibrahim Shawahni
+	 * @author Anas Salahat
+	 */
+	def static waitToastMessageToDisplay() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common Objects/div_toasterMessage'), GlobalVariable.ElementsTimeOut)
+	}
+	
 	/***
 	 * This function will change the fulfillment to PickUp from the header
 	 * @author khaleel Musleh
