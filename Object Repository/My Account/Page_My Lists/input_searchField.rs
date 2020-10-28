@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Span_quickOrderOverlay</name>
+   <name>input_searchField</name>
    <tag></tag>
-   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
+   <elementGuidId>c630bcf3-637c-4cae-b981-d196ee93d5ab</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
+         <value>input[class^=&quot;list-search-filter&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

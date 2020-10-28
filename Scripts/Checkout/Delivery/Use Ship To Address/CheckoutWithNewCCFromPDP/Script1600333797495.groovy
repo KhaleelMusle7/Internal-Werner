@@ -1,35 +1,35 @@
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'customKeywords.BrowserKeywords.OpenBrowser'()
+CustomKeywords.'com.actions.basicActions.BrowserKeywords.OpenBrowser'()
 
-CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userName, GlobalVariable.password)
+CustomKeywords.'com.helpers.loginHelpers.LoginHelpers.PerformLogin'(GlobalVariable.userName, GlobalVariable.password)
 
-CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
+CustomKeywords.'com.helpers.loginHelpers.ChangeCustomerHelpers.ChangeCustomer'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
-CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.PDP_URL)
+CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.PDP_URL)
 
-CustomKeywords.'customKeywords.PDPKeywords.AddToCartFromPDP'()
+CustomKeywords.'com.actions.PDPActions.PDPActions.clickAddToCart'()
 
-CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithDeliveryAddress'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithDeliveryAddress'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStep'(GlobalVariable.Shipping_Available, GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.Shipping_Available, GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
 
-CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithPO'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutReviewHelpers.ReviewStep'()
 
-CustomKeywords.'customKeywords.OrderConfirmation.verifyPageTitle'()
+CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.verifyPageTitle'()
 
-String orderNumber = CustomKeywords.'customKeywords.OrderConfirmation.getOrderNumber'()
+String orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.getOrderNumber'()
 
-CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
+CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
+CustomKeywords.'com.actions.headerActions.SearchActions.searchForOrder'(orderNumber)
 
-CustomKeywords.'customKeywords.BrowserKeywords.closeBrowser'()
+CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

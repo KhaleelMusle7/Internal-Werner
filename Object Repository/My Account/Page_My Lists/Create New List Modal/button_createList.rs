@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Span_quickOrderOverlay</name>
+   <name>button_createList</name>
    <tag></tag>
-   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
+   <elementGuidId>93cfef15-2260-449f-a32c-ead3630f5292</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
+         <value>button[data-test-selector=&quot;tst_createListPopUp_createList&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

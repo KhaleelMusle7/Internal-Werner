@@ -17,27 +17,27 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/'</initValue>
-      <name>URL_Site</name>
+      <name>Site_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/SignIn'</initValue>
-      <name>URL_SignIn</name>
+      <name>SignInPage_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/MyAccount/ChangeCustomer'</initValue>
-      <name>URL_ChangeCustomer</name>
+      <name>ChangeCustomerPage_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/MyAccount'</initValue>
-      <name>URL_MyAccount</name>
+      <name>MyAccountDashboard_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/Cart'</initValue>
-      <name>URL_Cart</name>
+      <name>Cart_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

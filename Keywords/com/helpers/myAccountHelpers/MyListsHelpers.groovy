@@ -15,7 +15,7 @@ public class MyListsHelpers {
 	 */
 	@Keyword
 	def createNewListWithRandomNameAndDescription() {
-		TestObject createNewListButton = findTestObject('Object Repository/My Account/Page_My Lists/button_Create List')
+		TestObject createNewListButton = findTestObject('My Account/Page_My Lists/button_createList')
 		BasicActions.clickElement(createNewListButton)
 		String enteredListName = MyListsActions.writeRandomListName()
 		MyListsActions.writeRandomListDescription()

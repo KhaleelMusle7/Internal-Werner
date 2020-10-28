@@ -2,7 +2,7 @@ package com.actions.myAccountActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.actions.basicActions.BasicActions
-import com.actions.searchActions.SearchActions
+import com.actions.headerActions.SearchActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -15,7 +15,7 @@ public class OrderHistoryActions {
 	}
 	@Keyword
 	def static expandSearchForm() {
-		BasicActions.clickElement(findTestObject('My Account/Page_Order History/label_Search Orders History'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/label_searchOrdersHistory'))
 	}
 
 	/***

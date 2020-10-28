@@ -6,9 +6,9 @@ import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.util.helpers.generalHelpers.Navigations
 import com.validations.checkoutValidations.CartValidations
 
-import customKeywords.Navigations
 import internal.GlobalVariable
 
 public class CartActions {
@@ -31,7 +31,7 @@ public class CartActions {
 	def clearCart() {
 		Navigations.navigateToCart()
 
-		if(BasicActions.isElementPresent(findTestObject('Checkout/Page_Cart/button_Remove All Items'))) {
+		if(BasicActions.isElementPresent(findTestObject('Checkout/Page_Cart/button_removeAllItems'))) {
 			CartActions.clickRemoveAllButton()
 			CartActions.clickConfirmDeleteCartButton()
 		}
@@ -44,7 +44,7 @@ public class CartActions {
 	 * @author Anas Salahat
 	 */
 	def static clickRemoveAllButton() {
-		TestObject removeAllItemsButton = findTestObject('Checkout/Page_Cart/button_Remove All Items')
+		TestObject removeAllItemsButton = findTestObject('Checkout/Page_Cart/button_removeAllItems')
 		BasicActions.clickElement(removeAllItemsButton)
 	}
 

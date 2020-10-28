@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_ShippingInstructionsField</name>
+   <name>input_shippingInstructionsField</name>
    <tag></tag>
    <elementGuidId>2db951c5-6033-4934-aa6c-eac15c5477f9</elementGuidId>
    <selectorCollection>

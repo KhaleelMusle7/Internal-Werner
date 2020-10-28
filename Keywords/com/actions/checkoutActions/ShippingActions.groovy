@@ -24,7 +24,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickShipWhenAvailable (){
-		TestObject shipWhenAvailable = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenAvailable_RadioButton')
+		TestObject shipWhenAvailable = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenAvailableRadioButton')
 		BasicActions.clickElement(shipWhenAvailable)
 	}
 
@@ -33,7 +33,7 @@ public class ShippingActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickShipWhenComplete (){
-		TestObject shipWhenComplete = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenComplete_RadioButton')
+		TestObject shipWhenComplete = findTestObject('Checkout/Page_ReviewAndPay/Shipping/label_shipWhenCompleteRadioButton')
 		BasicActions.clickElement(shipWhenComplete)
 	}
 

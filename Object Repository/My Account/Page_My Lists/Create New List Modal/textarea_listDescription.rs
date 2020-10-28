@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Span_quickOrderOverlay</name>
+   <name>textarea_listDescription</name>
    <tag></tag>
-   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
+   <elementGuidId>90a6f6db-8a8c-4b98-acde-b5d12fa9e4ed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
+         <value>textarea[name=&quot;listDescription&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

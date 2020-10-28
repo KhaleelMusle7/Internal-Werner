@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Span_quickOrderOverlay</name>
+   <name>a_listName</name>
    <tag></tag>
-   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
+   <elementGuidId>f0c268e9-8c61-43f6-92d0-5740443cffd9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
+         <value>a[ng-bind=&quot;wishList.name&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

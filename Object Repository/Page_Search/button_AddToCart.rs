@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_AddToCart</name>
+   <name>button_addToCart</name>
    <tag></tag>
    <elementGuidId>26b0fa48-787c-44fd-af46-1654687830d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.xng-spinner-label.xng-spinner-label-default</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='search-product-line-cart_30d57236-a6b2-452a-8447-abf1007dfd65']/button/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.xng-spinner-label.xng-spinner-label-default</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

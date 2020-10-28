@@ -21,7 +21,7 @@ public class MyListsActions {
 	@Keyword
 	def static writeRandomListName() {
 		String randomListName = RandomUtil.getRandomName()
-		TestObject listNameField = findTestObject('My Account/Page_My Lists/Create New List Modal/input_List Name')
+		TestObject listNameField = findTestObject('My Account/Page_My Lists/Create New List Modal/input_listName')
 		BasicActions.writeText(listNameField, randomListName)
 		return randomListName
 	}
@@ -34,7 +34,7 @@ public class MyListsActions {
 	@Keyword
 	def static writeRandomListDescription() {
 		String randomListDescription = RandomUtil.getRandomString()
-		TestObject listDescriptionField = findTestObject('My Account/Page_My Lists/Create New List Modal/textarea_List Description')
+		TestObject listDescriptionField = findTestObject('My Account/Page_My Lists/Create New List Modal/textarea_listDescription')
 		BasicActions.writeText(listDescriptionField, randomListDescription)
 		return randomListDescription
 	}
@@ -45,7 +45,7 @@ public class MyListsActions {
 	 */
 	@Keyword
 	def static clickCreateListButtonInCreateNewListModal() {
-		TestObject createListButton = findTestObject('Object Repository/My Account/Page_My Lists/Create New List Modal/button_Create List')
+		TestObject createListButton = findTestObject('My Account/Page_My Lists/Create New List Modal/button_createList')
 		BasicActions.clickElement(createListButton)
 	}
 
@@ -69,7 +69,7 @@ public class MyListsActions {
 	 * @author Anas Salahat
 	 */
 	def static clickListAtIndex(int index) {
-		BasicActions.clickElementAtIndex(findTestObject('Object Repository/My Account/Page_My Lists/a_List Name'), index)
+		BasicActions.clickElementAtIndex(findTestObject('My Account/Page_My Lists/a_listName'), index)
 	}
 
 	/***
@@ -80,7 +80,7 @@ public class MyListsActions {
 	 * @author Anas Salahat
 	 */
 	def static writeSearchTerm(String searchTerm) {
-		TestObject searchField = findTestObject('Object Repository/My Account/Page_My Lists/input_Search Field')
+		TestObject searchField = findTestObject('My Account/Page_My Lists/input_searchField')
 		WebUI.clearText(searchField)
 		BasicActions.writeText(searchField, searchTerm);
 		GlobalActions.WaitForLoaderToFinish()

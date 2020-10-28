@@ -3,34 +3,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'customKeywords.BrowserKeywords.OpenBrowser'()
+CustomKeywords.'com.actions.basicActions.BrowserKeywords.OpenBrowser'()
 
-CustomKeywords.'customKeywords.LoginKeywords.PerformLogin'(GlobalVariable.userName, GlobalVariable.password)
+CustomKeywords.'com.helpers.loginHelpers.LoginHelpers.PerformLogin'(GlobalVariable.userName, GlobalVariable.password)
 
-CustomKeywords.'customKeywords.ChangeCustomerKeywords.ChangeCustomer'()
+CustomKeywords.'com.helpers.loginHelpers.ChangeCustomerHelpers.ChangeCustomer'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
-CustomKeywords.'customKeywords.QuickOrder.addfromQuickOrder'()
+CustomKeywords.'com.actions.headerActions.QuickOrderOverlyActions.addProductToCart'()
 
-CustomKeywords.'customKeywords.Navigations.navigateToCart'()
+CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.AddressesStepWithPickUpAddress'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithPickUpAddress'()
 
 CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStepWithPickUp'( GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
 
-CustomKeywords.'customKeywords.CheckoutKeywords.PaymentStepWithSavedCC'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithSavedCC'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.ReviewStep'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutReviewHelpers.ReviewStep'()
 
-CustomKeywords.'customKeywords.OrderConfirmation.verifyPageTitle'()
+CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.verifyPageTitle'()
 
-String orderNumber = CustomKeywords.'customKeywords.OrderConfirmation.getOrderNumber'()
+String orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.getOrderNumber'()
 
-CustomKeywords.'customKeywords.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
+CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'customKeywords.CheckoutKeywords.verifyOrderPlaced'(orderNumber)
+CustomKeywords.'com.actions.headerActions.SearchActions.searchForOrder'(orderNumber)
 
-CustomKeywords.'customKeywords.BrowserKeywords.closeBrowser'()
+CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

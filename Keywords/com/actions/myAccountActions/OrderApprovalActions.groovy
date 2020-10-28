@@ -13,7 +13,7 @@ class OrderApprovalActions {
 	 */
 	@Keyword
 	def static expandSearchOrdersWidget() {
-		TestObject searchOrderWidget = findTestObject("My Account/Page_Order Approval/label_Expand Search Widget")
+		TestObject searchOrderWidget = findTestObject("My Account/Page_Order Approval/label_expandSearchWidget")
 		BasicActions.clickElement(searchOrderWidget)
 	}
 
@@ -24,7 +24,7 @@ class OrderApprovalActions {
 	 */
 	@Keyword
 	def static writeOrderNumber(String orderNumber) {
-		TestObject orderNumberField = findTestObject('My Account/Page_Order Approval/input_Order Number Field')
+		TestObject orderNumberField = findTestObject('My Account/Page_Order Approval/input_orderNumberField')
 		BasicActions.writeText(orderNumberField, orderNumber)
 	}
 
@@ -34,7 +34,7 @@ class OrderApprovalActions {
 	 */
 	@Keyword
 	def static clickSearchButton() {
-		TestObject searchButton = findTestObject('My Account/Page_Order Approval/button_Search Order')
+		TestObject searchButton = findTestObject('My Account/Page_Order Approval/button_searchOrder')
 		BasicActions.clickElement(searchButton)
 	}
 
@@ -44,7 +44,7 @@ class OrderApprovalActions {
 	 */
 	@Keyword
 	def static clickOrderNumberLink() {
-		TestObject orderNumberLink = findTestObject('Object Repository/My Account/Page_Order Approval/a_Order Number')
+		TestObject orderNumberLink = findTestObject('My Account/Page_Order Approval/a_orderNumber')
 		BasicActions.clickElement(orderNumberLink)
 	}
 }

@@ -1,12 +1,11 @@
-package com.actions.PDPActions
-import com.actions.checkoutActions.Checkout_Actions
+package com.actions.basicActions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.actions.basicActions.BasicActions
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -22,15 +21,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class PDPActions {
-	/***
-	 * @author khaleel Musleh
+public class BrowserKeywords {
+	/**
+	 * Open browser and maximize window
+	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
 	 */
-
 	@Keyword
-	def static clickAddToCart(){
+	def OpenBrowser() {
+		WebUI.openBrowser('')
 
-		Checkout_Actions.writeQuantity(findTestObject("Object Repository/PDP/qty_feild"),GlobalVariable.qty)
-		Checkout_Actions.clickAddToCart(findTestObject("Object Repository/PDP/addToCart"))
+		WebUI.maximizeWindow()
+
+		WebUI.navigateToUrl(GlobalVariable.Site_URL)
+	}
+
+	/**
+	 * Close Browser
+	 * @author Iman Abu Abiah
+	 */
+	@Keyword
+	def closeBrowser() {
+		WebUI.closeBrowser()
 	}
 }
