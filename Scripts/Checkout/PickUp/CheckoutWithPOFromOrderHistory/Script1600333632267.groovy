@@ -20,7 +20,7 @@ CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithPickUpAddress'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStepWithPickUp'( GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
+CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStepWithPickUp'(GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
 

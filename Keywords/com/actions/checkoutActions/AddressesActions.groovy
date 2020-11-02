@@ -63,7 +63,7 @@ public class AddressesActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static clickSaveButtonInOneTimeForm() {
-		TestObject saveButton = findTestObject('Page_Checkout_Addresses/button_Save')
+		TestObject saveButton = findTestObject('Object Repository/Checkout/Page_Addresses/button_save')
 		BasicActions.clickElement(saveButton)
 	}
 

@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.WebElement
 
+import com.actions.basicActions.BasicActions
+import com.actions.basicActions.GlobalActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
@@ -32,7 +34,9 @@ public class PLPActions {
 			TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
 
 
-		WebUI.click(randomButton)
+		BasicActions.clickElement(randomButton)
+		
+		GlobalActions.waitToastMessageToDisplay()
 	}
 
 	@Keyword

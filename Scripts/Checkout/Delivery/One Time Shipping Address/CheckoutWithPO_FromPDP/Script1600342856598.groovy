@@ -33,4 +33,3 @@ CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(Glob
 CustomKeywords.'com.actions.headerActions.SearchActions.searchForOrder'(orderNumber)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()
-

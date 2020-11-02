@@ -32,7 +32,7 @@ CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
-CustomKeywords.'customKeywords.CheckoutKeywords.ShippingStepWithPickUp'( GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithPickUpAddress'()
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
 
