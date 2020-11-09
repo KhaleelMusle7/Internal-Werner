@@ -10,9 +10,11 @@ CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.PDP_URL)
 
-CustomKeywords.'com.actions.PDPActions.PDPActions.clickAddToCart'()
+String itemSKU = CustomKeywords.'com.actions.PDPActions.PDPActions.clickAddToCartWithQuantity'(GlobalVariable.qty)
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
+
+CustomKeywords.'com.validations.checkoutValidations.CartValidations.verifyItemExistsInCartWithSpecificQuantity'(itemSKU, GlobalVariable.qty)
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 

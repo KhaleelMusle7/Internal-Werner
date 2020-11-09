@@ -1,3 +1,5 @@
+import com.validations.checkoutValidations.CartValidations
+
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.OpenBrowser'()
@@ -10,9 +12,11 @@ CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.PDP_URL)
 
-CustomKeywords.'com.actions.PDPActions.PDPActions.clickAddToCart'()
+String itemSKU = CustomKeywords.'com.actions.PDPActions.PDPActions.clickAddToCartWithQuantity'(GlobalVariable.qty)
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
+
+CartValidations.verifyItemExistsInCartWithSpecificQuantity(itemSKU, GlobalVariable.qty)
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 

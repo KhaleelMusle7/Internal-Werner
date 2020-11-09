@@ -26,7 +26,7 @@ public class Checkout_Actions {
 
 	def static clickRandomAddToCart() {
 
-		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_PLP/Span_addToCart'),GlobalVariable.ElementsTimeOut)
+		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Page_SRP And PLP/Span_addToCart'),GlobalVariable.ElementsTimeOut)
 		Random rand = new Random();
 		int randomButtonIndex ;
 		WebElement randomButtonElement = null;
