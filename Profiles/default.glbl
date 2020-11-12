@@ -76,11 +76,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>30</initValue>
-      <name>Timeout</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'5'</initValue>
       <name>qty</name>
    </GlobalVariableEntity>
@@ -111,11 +106,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>30</initValue>
-      <name>ElementsTimeOut</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'1503'</initValue>
       <name>Customer_Billto</name>
    </GlobalVariableEntity>
@@ -131,7 +121,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'WEB001492'</initValue>
+      <initValue>'WEB001793'</initValue>
       <name>OrderApproval_OrderNumber</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

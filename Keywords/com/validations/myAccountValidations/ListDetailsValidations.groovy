@@ -33,7 +33,7 @@ public class ListDetailsValidations {
 	 */
 	@Keyword
 	def static int verifyItemExistsInList(String itemName) {
-		List<WebElement> itemsNames = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/My Account/Page_List Details/a_itemName'), GlobalVariable.ElementsTimeOut)
+		List<WebElement> itemsNames = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/My Account/Page_List Details/a_itemName'), GlobalVariable.elementTimeOut)
 		int itemIndex = -1;
 		for (int i = 0; i<itemsNames.size(); i++) {
 			TestObject currentItemNameObject = WebUI.convertWebElementToTestObject(itemsNames.get(i))

@@ -48,7 +48,7 @@ public class ChangeCustomerActions {
 		BasicActions.clickElement(billToDropDown)
 		BasicActions.writeText(billToDropDown, billToValue)
 		TestObject billToList = findTestObject('Object Repository/Page_ChangeCustomer/li_Select Bill-To Options')
-		WebUI.waitForElementVisible(billToList, GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementVisible(billToList, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(billToList)
 	}
 
@@ -65,7 +65,7 @@ public class ChangeCustomerActions {
 		BasicActions.clickElement(shipToDropDown)
 		BasicActions.writeText(shipToDropDown, shipToValue)
 		TestObject shipToList = findTestObject('Page_ChangeCustomer/ShippingAddressDropDown')
-		WebUI.waitForElementVisible(shipToList, GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementVisible(shipToList, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(shipToList)
 	}
 

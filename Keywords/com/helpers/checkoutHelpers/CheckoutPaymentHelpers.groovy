@@ -4,7 +4,7 @@ import com.actions.checkoutActions.PaymentActions
 import com.kms.katalon.core.annotation.Keyword
 
 public class CheckoutPaymentHelpers {
-	
+
 	/**
 	 * This keyword will do the following:
 	 * 1. Choose CC Option

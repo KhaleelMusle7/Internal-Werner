@@ -22,7 +22,7 @@ public class QuickOrderOverlyActions {
 	def static addToCart() {
 		BasicActions.clickElement(findTestObject('My Account/Page_QuickOrder/addToCart'))
 	}
-	
+
 	@Keyword
 	def static addProductToCart() {
 		QuickOrderOverlyActions.expandQuickOrder()

@@ -19,7 +19,7 @@ public class OrderConfirmationActions {
 		String currentCheckoutPageTitle = BasicActions.getElementText(checkoutPageTitle)
 		assert currentCheckoutPageTitle.equalsIgnoreCase("Order Confirmation")
 	}
-	
+
 	@Keyword
 	def static String getOrderNumber() {
 		return BasicActions.getElementText(findTestObject('Checkout/Page_Order Confirmation/orderNumber'))

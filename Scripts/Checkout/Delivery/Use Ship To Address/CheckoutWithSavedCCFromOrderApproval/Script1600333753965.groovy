@@ -14,8 +14,6 @@ CustomKeywords.'com.helpers.myAccountHelpers.OrderApprovalHelpers.navigateToOrde
 
 CustomKeywords.'com.actions.myAccountActions.OrderApprovalDetailsActions.clickApproveOrder'()
 
-CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
-
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithDeliveryAddress'()

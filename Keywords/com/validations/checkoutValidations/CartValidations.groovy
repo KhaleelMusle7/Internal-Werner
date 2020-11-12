@@ -27,7 +27,7 @@ class CartValidations {
 
 		assert emptyCartMessage.trim() == expectedMessage.trim()
 	}
-	
+
 	/***
 	 * Verifies if an item with specific SKU and specific quantity exists in the cart
 	 * @param SKU the ERP number of the item
@@ -38,15 +38,15 @@ class CartValidations {
 	 */
 	@Keyword
 	def static int verifyItemExistsInCartWithSpecificQuantity(String SKU, String expectedQuantity) {
-		List<WebElement> itemsERPNumbers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Checkout/Page_Cart/span_productSKU'), GlobalVariable.ElementsTimeOut)
-		List<WebElement> itemsQuantityFields = WebUI.findWebElements(findTestObject('Object Repository/Checkout/Page_Cart/input_itemQtyBox'), GlobalVariable.ElementsTimeOut)
+		List<WebElement> itemsERPNumbers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Checkout/Page_Cart/span_productSKU'), GlobalVariable.elementTimeOut)
+		List<WebElement> itemsQuantityFields = WebUI.findWebElements(findTestObject('Object Repository/Checkout/Page_Cart/input_itemQtyBox'), GlobalVariable.elementTimeOut)
 		int itemIndex = -1;
 		for (int i = 0; i<itemsERPNumbers.size(); i++) {
 			TestObject currentItemNumberObject = WebUI.convertWebElementToTestObject(itemsERPNumbers.get(i))
 			TestObject currentItemQuantityObject = WebUI.convertWebElementToTestObject(itemsQuantityFields.get(i))
 			String currentItemSKU = BasicActions.getElementText(currentItemNumberObject)
 			String currentItemQuantityValue = WebUI.getAttribute(currentItemQuantityObject, "value")
-			
+
 			if(currentItemSKU.equalsIgnoreCase(SKU) && currentItemQuantityValue.equals(expectedQuantity)) {
 				assert true == true
 				itemIndex = i;

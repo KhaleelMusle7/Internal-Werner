@@ -1,8 +1,6 @@
 package com.util.helpers.generalHelpers
 
 import com.github.javafaker.Faker
-import com.github.javafaker.service.FakeValuesService
-import com.kms.katalon.core.annotation.Keyword
 
 class RandomUtil {
 

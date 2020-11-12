@@ -9,8 +9,6 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.util.helpers.generalHelpers.RandomUtil
 
-import internal.GlobalVariable
-
 public class MyListsActions {
 
 	/***

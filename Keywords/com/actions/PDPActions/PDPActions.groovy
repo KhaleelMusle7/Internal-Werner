@@ -7,7 +7,7 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 
 public class PDPActions {
-	
+
 	/***
 	 * Fill the quantity field and clicks on add to cart button
 	 * @param quantityValue The quantity value for the product will be added to cart
@@ -23,8 +23,8 @@ public class PDPActions {
 		String itemSKUText = BasicActions.getElementText(itemSKUObject)
 
 		BasicActions.writeText(quantityField, quantityValue)
-		BasicActions.clickElement(addToCartButton)	
+		BasicActions.clickElement(addToCartButton)
 		GlobalActions.waitToastMessageToDisplay()
-			return itemSKUText
+		return itemSKUText
 	}
 }

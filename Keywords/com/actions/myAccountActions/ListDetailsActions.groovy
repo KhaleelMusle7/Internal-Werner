@@ -33,7 +33,7 @@ public class ListDetailsActions {
 	@Keyword
 	def static writeSearchTerm(String searchTerm) {
 		TestObject keywordSearchField = findTestObject('My Account/Page_List Details/Add Items Modal/input_searchItemKeywordField')
-		WebUI.waitForElementClickable(keywordSearchField, GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementClickable(keywordSearchField, GlobalVariable.elementTimeOut)
 		BasicActions.writeText(keywordSearchField, searchTerm)
 	}
 
@@ -47,8 +47,8 @@ public class ListDetailsActions {
 	@Keyword
 	def static String[] selectSuggestedItemAtIndex(int index) {
 		TestObject suggestedProduct = findTestObject('My Account/Page_List Details/Add Items Modal/li_suggestedProduct')
-		WebUI.waitForElementVisible(suggestedProduct, GlobalVariable.ElementsTimeOut)
-		WebUI.waitForElementClickable(suggestedProduct, GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementVisible(suggestedProduct, GlobalVariable.elementTimeOut)
+		WebUI.waitForElementClickable(suggestedProduct, GlobalVariable.elementTimeOut)
 
 		String itemName = BasicActions.getElementTextAtIndex(findTestObject('Object Repository/My Account/Page_List Details/Add Items Modal/suggestedItemText'), index)
 		String itemNumber = BasicActions.getElementTextAtIndex(findTestObject('Object Repository/My Account/Page_List Details/Add Items Modal/suggestedItemNumber'), index)
@@ -70,7 +70,7 @@ public class ListDetailsActions {
 	@Keyword
 	def static String[] selecRandomSuggestedItem() {
 		TestObject suggestedProducts = findTestObject('My Account/Page_List Details/Add Items Modal/li_suggestedProduct')
-		List<WebElement> items = WebUiCommonHelper.findWebElements(suggestedProducts, GlobalVariable.ElementsTimeOut)
+		List<WebElement> items = WebUiCommonHelper.findWebElements(suggestedProducts, GlobalVariable.elementTimeOut)
 		int randomIndex = Math.floor(Math.random() * items.size())
 		return selectSuggestedItemAtIndex(randomIndex)
 	}

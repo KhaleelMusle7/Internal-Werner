@@ -14,7 +14,7 @@ public class GlobalActions {
 	 */
 	def static WaitForLoaderToFinish(){
 		TestObject loadingSpinner = findTestObject('Page_ChangeCustomer/loader')
-		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.elementTimeOut)
 	}
 
 	/***
@@ -25,7 +25,7 @@ public class GlobalActions {
 	 * @author Anas Salahat
 	 */
 	def static waitToastMessageToDisplay() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common Objects/div_toasterMessage'), GlobalVariable.ElementsTimeOut)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common Objects/div_toasterMessage'), GlobalVariable.elementTimeOut)
 	}
 
 	/***

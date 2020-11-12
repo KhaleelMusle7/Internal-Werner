@@ -1,8 +1,7 @@
 package com.actions.myAccountActions
-import com.actions.basicActions.BasicActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.actions.basicActions.BasicActions
 
 public class MyAccountActions {
 	def static verifyMyAccountTitleIsDisplayed(){

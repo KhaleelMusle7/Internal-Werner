@@ -18,7 +18,7 @@ public class PLPActions {
 	def clickRandomitem(TestObject randomItem) {
 
 		WebUI.verifyElementVisible(findTestObject(randomItem))
-		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject(randomItem),GlobalVariable.ElementsTimeOut)
+		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject(randomItem),GlobalVariable.elementTimeOut)
 		Random rand = new Random();
 		int randomButtonIndex ;
 
@@ -40,7 +40,7 @@ public class PLPActions {
 	@Keyword
 	def AddToCartFromPLP () {
 
-		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Page_SRP And PLP/Span_addToCart'),GlobalVariable.ElementsTimeOut)
+		List<WebElement> addToCartButtons = WebUiCommonHelper.findWebElements(findTestObject('Page_SRP And PLP/Span_addToCart'),GlobalVariable.elementTimeOut)
 		Random rand = new Random();
 		int randomButtonIndex ;
 		WebElement randomButtonElement = null;
@@ -51,7 +51,7 @@ public class PLPActions {
 			TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
 		WebUI.click(randomButton)
 	}
-	
+
 	/***
 	 * Clicks on Add To Cart button for random product with fill quantity value for this product where this product can be added to the cart
 	 * @param quantityValue The quantity value for the product will be added to cart
@@ -64,7 +64,7 @@ public class PLPActions {
 
 		TestObject productContainerTestObject = findTestObject('Object Repository/Page_SRP And PLP/li_productContainer');
 		WebUI.verifyElementVisible(productContainerTestObject)
-		List<WebElement> productContainersList =  WebUiCommonHelper.findWebElements(productContainerTestObject, GlobalVariable.ElementsTimeOut)
+		List<WebElement> productContainersList =  WebUiCommonHelper.findWebElements(productContainerTestObject, GlobalVariable.elementTimeOut)
 
 
 		List<WebElement> availbleAddToCartProducts = new ArrayList<WebElement>()

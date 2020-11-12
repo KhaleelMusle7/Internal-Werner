@@ -104,7 +104,7 @@ public class BasicActions {
 	 * @author Anas Salahat
 	 */
 	def static String getElementTextAtIndex(TestObject object, int index) {
-		List<WebElement> elementsList = WebUiCommonHelper.findWebElements(object, GlobalVariable.ElementsTimeOut)
+		List<WebElement> elementsList = WebUiCommonHelper.findWebElements(object, GlobalVariable.elementTimeOut)
 		WebElement elementAtIndex = elementsList.get(index);
 		String itemText = elementAtIndex.getText()
 		return itemText
@@ -128,7 +128,7 @@ public class BasicActions {
 			return false;
 		}
 	}
-	
+
 	/***
 	 * for navigate to any page
 	 * @author khaleel Musleh

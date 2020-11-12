@@ -14,7 +14,7 @@ public class OrderApprovalDetailsActions {
 	 */
 	@Keyword
 	def clickApproveOrder() {
-		TestObject approveOrderButton = findTestObject("My Account/Page_Order Approval Details/button_approveOrder")
+		TestObject approveOrderButton = findTestObject("Object Repository/My Account/Page_Order Approval Details/button_approveOrder")
 		GlobalActions.WaitForLoaderToFinish()
 	}
 }
