@@ -10,17 +10,17 @@ import internal.GlobalVariable
 public class QuickOrderOverlyActions {
 
 	public static void expandQuickOrder() {
-		WebUI.mouseOver(findTestObject('My Account/Page_QuickOrder/Span_QuickOrderOverlay'))
+		WebUI.mouseOver(findTestObject('My Account/Page_Quick Order/Span_QuickOrderOverlay'))
 	}
 
 	def static addRandomItem() {
-		BasicActions.clickElement(findTestObject('My Account/Page_QuickOrder/Keyword_input'))
-		BasicActions.writeText(findTestObject('My Account/Page_QuickOrder/Keyword_input'), GlobalVariable.Search_term)
-		BasicActions.clickElementAtIndex(findTestObject('My Account/Page_QuickOrder/Selected_Item'), 0)
+		BasicActions.clickElement(findTestObject('My Account/Page_Quick Order/Keyword_input'))
+		BasicActions.writeText(findTestObject('My Account/Page_Quick Order/Keyword_input'), GlobalVariable.Search_term)
+		BasicActions.clickElementAtIndex(findTestObject('My Account/Page_Quick Order/Selected_Item'), 0)
 	}
 
 	def static addToCart() {
-		BasicActions.clickElement(findTestObject('My Account/Page_QuickOrder/addToCart'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Quick Order/addToCart'))
 	}
 
 	@Keyword

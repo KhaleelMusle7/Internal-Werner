@@ -2,15 +2,15 @@ package com.actions.myAccountActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.actions.basicActions.BasicActions
-import com.actions.headerActions.SearchActions
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.testobject.TestObject
 
 public class OrderHistoryActions {
 
 
 	@Keyword
 	def static navigateToSpecificOrder(String orderNumber) {
-		SearchActions.searchForOrder(orderNumber)
+		searchOrderByOrderNumber(orderNumber)
 	}
 	@Keyword
 	def static expandSearchForm() {
@@ -25,7 +25,18 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def static fillOrderNumberField(String orderNumber) {
-		BasicActions.writeText(findTestObject('My Account/Page_Order History/input_orders-page-search'), orderNumber)
+		BasicActions.writeText(findTestObject('My Account/Page_Order History/input_orderNumber'), orderNumber)
+	}
+
+	/***
+	 * Writes a Search Term in the PO field
+	 * @param PO
+	 * @author Anas Salahat
+	 */
+	@Keyword
+	def static fillPOField(String PO) {
+		TestObject poField = findTestObject('Object Repository/My Account/Page_Order History/input_PO')
+		BasicActions.writeText(poField, PO)
 	}
 
 	/***
@@ -50,6 +61,28 @@ public class OrderHistoryActions {
 	def static reorder() {
 		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_ordernumber'))
 		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_reorder'))
+	}
+
+	/***
+	 * @author khaleel Musleh
+	 */
+	@Keyword
+	def static searchOrderByOrderNumber(String orderNumber) {
+		OrderHistoryActions.expandSearchForm()
+		OrderHistoryActions.fillOrderNumberField(orderNumber)
+		OrderHistoryActions.clickSearchButton()
+	}
+
+	/***
+	 * Search order by it's PO number
+	 * @param po
+	 * @author Anas Salahat
+	 */
+	@Keyword
+	def static searchOrderByPO(String po) {
+		OrderHistoryActions.expandSearchForm()
+		OrderHistoryActions.fillPOField(po)
+		OrderHistoryActions.clickSearchButton()
 	}
 }
 

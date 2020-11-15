@@ -23,7 +23,7 @@ public class CheckoutPaymentHelpers {
 		PaymentActions.wrtieCVVForSavedCC()
 		PaymentActions.clickNext()
 	}
-
+	
 	/**
 	 * This keyword will do the following:
 	 * 1. Choose CC Option
@@ -50,14 +50,17 @@ public class CheckoutPaymentHelpers {
 	/**
 	 * This keyword will do the following:
 	 * 1. Choose PO Option
-	 * 2. Fill PO number field
+	 * 2. Fill random PO number field
 	 * 3. Proceed to the next step
+	 * @return the entered PO number
 	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
 	 */
 	@Keyword
 	def PaymentStepWithPO(){
 		PaymentActions.clickPOOption()
-		PaymentActions.wrtiePONumber()
+		String PO = PaymentActions.writeRandomPONumber()
 		PaymentActions.clickNext()
+		return PO
 	}
 }

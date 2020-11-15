@@ -31,13 +31,4 @@ public class SearchActions {
 		Checkout_Actions.clickAddToCart(findTestObject('Page_Search/button_AddToCart'))
 	}
 
-	/***
-	 * @author khaleel Musleh
-	 */
-	@Keyword
-	def static searchForOrder(String orderNumber) {
-		OrderHistoryActions.expandSearchForm()
-		OrderHistoryActions.fillOrderNumberField(orderNumber)
-		OrderHistoryActions.clickSearchButton()
-	}
 }

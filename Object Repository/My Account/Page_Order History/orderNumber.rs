@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.tst_ordersPage_orderLine .col-erp>a</value>
+         <value>tr[class=&quot;tst_ordersPage_orderLine&quot;] >td > a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

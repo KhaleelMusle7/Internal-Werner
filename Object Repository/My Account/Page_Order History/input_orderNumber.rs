@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_orders-page-search</name>
+   <name>input_orderNumber</name>
    <tag></tag>
    <elementGuidId>4d3865f8-1824-42b9-b1c9-38e42bb2937f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'orders-page-search']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#OrderNumber</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'orders-page-search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

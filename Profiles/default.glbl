@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'iman.abuabiah@gmail.com'</initValue>
+      <initValue>'automation@xngage.com'</initValue>
       <name>userName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'123456789'</initValue>
+      <initValue>'123123123'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -153,5 +153,10 @@
       <description></description>
       <initValue>'A-B Rockwell 100S-C37EJ22BC 37 A Safety Cont'</initValue>
       <name>Item_Name_For_List</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Xngage-Automated-Order-PO-'</initValue>
+      <name>PO_Prefix</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

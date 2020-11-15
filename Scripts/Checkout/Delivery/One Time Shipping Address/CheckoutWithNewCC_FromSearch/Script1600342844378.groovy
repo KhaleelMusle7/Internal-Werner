@@ -22,7 +22,7 @@ CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithNewCC'()
 
-CustomKeywords.'com.helpers.checkoutHelpers.CheckoutReviewHelpers.ReviewStep'()
+CustomKeywords.'com.actions.checkoutActions.ReviewActions.clickSubmitOrder'()
 
 CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.verifyPageTitle'()
 
@@ -30,6 +30,6 @@ String orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmati
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'com.actions.headerActions.SearchActions.searchForOrder'(orderNumber)
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.searchOrderByOrderNumber'(orderNumber)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

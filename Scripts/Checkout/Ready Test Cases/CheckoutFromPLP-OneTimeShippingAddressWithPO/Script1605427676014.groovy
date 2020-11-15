@@ -24,9 +24,9 @@ CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesSt
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.Shipping_Available, GlobalVariable.Attention, 
     GlobalVariable.ShippingInstructions)
 
-CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithSavedCC'()
+String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
 
-CustomKeywords.'com.helpers.checkoutHelpers.CheckoutReviewHelpers.ReviewStep'()
+CustomKeywords.'com.actions.checkoutActions.ReviewActions.clickSubmitOrder'()
 
 CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.verifyPageTitle'()
 
@@ -34,6 +34,16 @@ String orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmati
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'com.actions.headerActions.SearchActions.searchForOrder'(orderNumber)
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.searchOrderByPO'(poNumber)
+
+CustomKeywords.'com.validations.myAccountValidations.OrderHistoryValidations.verifyOrderHistoryHasItems'()
+
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.clickOrderNumber'()
+
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentOrderNumber'(orderNumber)
+
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentPONumber'(poNumber)
+
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyItemExistsInPage'(addedItemSKU)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

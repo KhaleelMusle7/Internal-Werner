@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.testobject.TestObject
+import com.util.helpers.generalHelpers.RandomUtil
 
 import internal.GlobalVariable
 
@@ -53,7 +54,21 @@ public class PaymentActions {
 	 */
 	def static wrtiePONumber(){
 		TestObject poNumberField = findTestObject('Checkout/Page_ReviewAndPay/Payment/input_poNumber')
+		
 		BasicActions.writeText(poNumberField, GlobalVariable.PO_Number)
+	}
+	
+	/***
+	 * Writes a random PO Number concatenated with a PO prefix configured in the Global Variables
+	 * @return PO the value of written PO
+	 * @author Ibrahim Shawahni
+	 * @author Anas Salahat
+	 */
+	def static writeRandomPONumber() {
+		TestObject poNumberField = findTestObject('Object Repository/Checkout/Page_ReviewAndPay/Payment/input_poNumber')
+		String PO = GlobalVariable.PO_Prefix + RandomUtil.getRandomString()
+		BasicActions.writeText(poNumberField, PO)
+		return PO
 	}
 
 	/**

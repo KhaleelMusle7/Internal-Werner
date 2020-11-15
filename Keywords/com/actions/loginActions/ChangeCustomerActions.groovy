@@ -18,8 +18,8 @@ public class ChangeCustomerActions {
 	 */
 
 	def static selectBillToAddress(){
-		WebUI.click(findTestObject('Page_ChangeCustomer/input_selectBillToList'))
-		List<WebElement> BilllistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/BillingAddressDropdown'), 30)
+		BasicActions.clickElement(findTestObject('Page_ChangeCustomer/input_selectBillToList'))
+		List<WebElement> BilllistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/BillingAddressDropdown'), GlobalVariable.elementTimeOut)
 		WebElement firstBillTo = BilllistElements.get(0)
 		firstBillTo.click()
 	}
@@ -30,8 +30,8 @@ public class ChangeCustomerActions {
 	 */
 
 	def static selectShipToAddress(){
-		WebUI.click(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
-		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/ShippingAddressDropDown'), 30)
+		BasicActions.clickElement(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
+		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/ShippingAddressDropDown'), GlobalVariable.elementTimeOut)
 		WebElement firstShipTo = ShiplistElements.get(0)
 		firstShipTo.click()
 	}

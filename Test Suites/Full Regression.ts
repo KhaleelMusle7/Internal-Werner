@@ -27,25 +27,25 @@
       <guid>6bf9d789-3839-4c00-9623-bedef2fd29b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/Delivery/One Time Shipping Address/CheckoutWithSavedCCFromPLP</testCaseId>
+      <testCaseId>Test Cases/Checkout/Ready Test Cases/CheckoutFromPLP-OneTimeShippingAddressWithPO</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>171b2a8f-c788-4cbe-8b7a-d07c8c3363e4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/Delivery/Use Ship To Address/CheckoutWithNewCCFromPDP</testCaseId>
+      <testCaseId>Test Cases/Checkout/PickUp/Use Ship To Address/CheckoutWithNewCCFromPDP</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c954497d-65d5-4c07-81c6-0798ea1233f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/Delivery/Use Ship To Address/CheckoutWithPOFromPLP</testCaseId>
+      <testCaseId>Test Cases/Checkout/PickUp/Use Ship To Address/CheckoutWithPOFromPLP</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a5ef050d-fa4a-4278-9563-c21d378ac845</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/Delivery/Use Ship To Address/CheckoutWithSavedCCFromOrderApproval</testCaseId>
+      <testCaseId>Test Cases/Checkout/PickUp/Use Ship To Address/CheckoutWithSavedCCFromOrderApproval</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>59715cf3-2d79-4ca8-b74a-992a5d6cfeb3</guid>
