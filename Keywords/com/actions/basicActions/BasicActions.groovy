@@ -136,4 +136,24 @@ public class BasicActions {
 	def static navigateToURL(String Url){
 		WebUI.navigateToUrl(Url);
 	}
+	
+	/***
+	 * Clicks on a random element from a set of elements with the same selector
+	 * @param obj the selector represents the set of elements
+	 */
+	def static  clickRandomElement(TestObject obj) {
+		List<WebElement> elementsList = WebUiCommonHelper.findWebElements(obj, GlobalVariable.elementTimeOut)
+
+		Random rand = new Random();
+		int randomButtonIndex ;
+		WebElement randomButtonElement = null;
+
+		randomButtonIndex = rand.nextInt(elementsList.size());
+		randomButtonElement = elementsList.get(randomButtonIndex);
+
+		TestObject randomButton = WebUI.convertWebElementToTestObject(randomButtonElement)
+		WebUI.click(randomButton)
+
+		return randomButtonIndex
+	}
 }

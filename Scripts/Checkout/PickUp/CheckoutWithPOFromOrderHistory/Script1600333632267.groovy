@@ -1,3 +1,5 @@
+import com.validations.checkoutValidations.CartValidations
+
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.OpenBrowser'()
@@ -10,11 +12,13 @@ CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.navigateToSpecificOrder'(GlobalVariable.OrderHistory_OrderNumber)
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.navigateToRandomOrder'()
 
-CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.reorder'()
+String itemSKU = CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.reorder'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
+
+CartValidations.verifyItemExistsInCart(itemSKU)
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
