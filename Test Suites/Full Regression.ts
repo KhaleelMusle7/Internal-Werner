@@ -63,6 +63,6 @@
       <guid>2d13d2a1-cf03-4b0f-ae9c-005beb335789</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/PickUp/CheckoutWithSavedCCFromQuickOrder</testCaseId>
+      <testCaseId>Test Cases/Checkout/Ready Test Cases/CheckoutFromQuickOrderModal-ShippingAddressWithSaveNewCard</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

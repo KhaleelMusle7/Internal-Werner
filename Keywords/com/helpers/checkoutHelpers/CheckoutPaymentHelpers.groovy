@@ -46,6 +46,30 @@ public class CheckoutPaymentHelpers {
 		PaymentActions.wrtiePONumber()
 		PaymentActions.clickNext()
 	}
+	
+	/**
+	 * This keyword will do the following:
+	 * 1. Choose CC Option
+	 * 2. Select Credit Card option from the drop-down
+	 * 4. Fill CC information
+	 * 5. Fill PO number field
+	 * 6. Proceed to the next step
+	 * @return PO Number
+	 * @author Anas Salahat
+	 */
+	@Keyword
+	def PaymentStepWithSaveNewCC(){
+		PaymentActions.clickCCOption()
+		PaymentActions.selectNewCC()
+		PaymentActions.clickSaveCardCheckbox()
+		PaymentActions.wrtieCardName()
+		PaymentActions.wrtieCardNumber()
+		PaymentActions.wrtieCVVForNewCC()
+		PaymentActions.wrtieExpDate()
+		String poNumber = PaymentActions.writeRandomPONumber()
+		PaymentActions.clickNext()
+		return poNumber
+	}
 
 	/**
 	 * This keyword will do the following:
