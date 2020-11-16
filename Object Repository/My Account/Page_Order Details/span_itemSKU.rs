@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span[class=&quot;item-num-sku&quot;] span</value>
+         <value>.item-num-sku span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

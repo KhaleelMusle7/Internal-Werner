@@ -57,14 +57,6 @@ public class OrderHistoryActions {
 		BasicActions.clickElement(findTestObject('My Account/Page_Order History/orderNumber'))
 	}
 
-	@Keyword
-	def static reorder() {
-		TestObject itemSKUObject = findTestObject('My Account/Page_Order History/span_itemSKU')
-		String itemSKUText = BasicActions.getElementTextAtIndex(itemSKUObject, 0)
-		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_reorder'))
-		return itemSKUText
-	}
-
 	/***
 	 * @author khaleel Musleh
 	 */
@@ -93,7 +85,7 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def static navigateToRandomOrder() {
-		TestObject orderERPbject = findTestObject('My Account/Page_Order History/a_orderERP')
+		TestObject orderERPbject = findTestObject('My Account/Page_Order History/orderNumber')
 		BasicActions.clickRandomElement(orderERPbject)
 	}
 }
