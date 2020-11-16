@@ -56,4 +56,28 @@ class CartValidations {
 		assert true == false
 		return itemIndex
 	}
+	
+	/***
+	 * Verifies if an item with specific SKU exists in the cart
+	 * @param SKU the ERP number of the item
+	 * @return the index of the item starting from 0
+	 * @author Nada Jom'a
+	 */
+	@Keyword
+	def static int verifyItemExistsInCart(String SKU) {
+		List<WebElement> itemsERPNumbers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Checkout/Page_Cart/span_productSKU'), GlobalVariable.elementTimeOut)
+		int itemIndex = -1;
+		for (int i = 0; i<itemsERPNumbers.size(); i++) {
+			TestObject currentItemNumberObject = WebUI.convertWebElementToTestObject(itemsERPNumbers.get(i))
+			String currentItemSKU = BasicActions.getElementText(currentItemNumberObject)
+
+			if(currentItemSKU.equalsIgnoreCase(SKU)) {
+				assert true == true
+				itemIndex = i;
+				return itemIndex;
+			}
+		}
+		assert true == false
+		return itemIndex
+	}
 }

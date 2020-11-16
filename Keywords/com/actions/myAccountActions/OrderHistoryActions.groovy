@@ -59,8 +59,10 @@ public class OrderHistoryActions {
 
 	@Keyword
 	def static reorder() {
-		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_ordernumber'))
+		TestObject itemSKUObject = findTestObject('My Account/Page_Order History/span_itemSKU')
+		String itemSKUText = BasicActions.getElementTextAtIndex(itemSKUObject, 0)
 		BasicActions.clickElement(findTestObject('My Account/Page_Order History/button_reorder'))
+		return itemSKUText
 	}
 
 	/***
@@ -83,6 +85,16 @@ public class OrderHistoryActions {
 		OrderHistoryActions.expandSearchForm()
 		OrderHistoryActions.fillPOField(po)
 		OrderHistoryActions.clickSearchButton()
+	}
+	
+	/***
+	 * Click on randon Order from order history page
+	 * @author Nada Jom'a
+	 */
+	@Keyword
+	def static navigateToRandomOrder() {
+		TestObject orderERPbject = findTestObject('My Account/Page_Order History/a_orderERP')
+		BasicActions.clickRandomElement(orderERPbject)
 	}
 }
 
