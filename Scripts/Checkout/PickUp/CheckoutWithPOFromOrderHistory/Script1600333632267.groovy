@@ -14,7 +14,7 @@ CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(Glob
 
 CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.navigateToRandomOrder'()
 
-String itemSKU = CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.reorder'()
+String itemSKU = CustomKeywords.'com.actions.myAccountActions.OrderDetailsActions.reorder'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
 

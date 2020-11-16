@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>orderNumber</name>
+   <name>button_Add All to Cart</name>
    <tag></tag>
-   <elementGuidId>64cbd3cc-d0fe-483a-8549-44dc7aaeee8f</elementGuidId>
+   <elementGuidId>7cb89eec-2fa1-48e7-9928-26939737a084</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;nwrap&quot;]/div[1]/div[3]/div[2]/div/div/div/div/div/div[1]/table/tbody/tr[2]/td[1]/span/a/span</value>
+         <value>//button[@id='tst_quickOrder_addAll']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.tst_ordersPage_orderLine .col-erp a</value>
+         <value>#tst_quickOrder_addAll</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-href</name>
-      <type>Main</type>
-      <value>/MyAccount/Orders/Details?ordernumber=S011064119</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>id</name>
       <type>Main</type>
-      <value>/MyAccount/Orders/Details?ordernumber=S011064119</value>
+      <value>tst_quickOrder_addAll</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary btn-add-all-checkout</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>vm.addAllToCart('/Cart')</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-disabled</name>
+      <type>Main</type>
+      <value>!vm.allQtysIsValid()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,77 +57,70 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                                S011064119
-                            </value>
+                            Add All to Cart &amp; Check Out
+                        </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;firstPageContainer&quot;)/div[@class=&quot;cms-currentPage&quot;]/div[@class=&quot;row main-row ma-order-history&quot;]/div[@class=&quot;container main-container&quot;]/div[@class=&quot;vm-my-account-layout&quot;]/div[@class=&quot;right-section&quot;]/div[1]/div[@class=&quot;card-tertiary x:pa-lg&quot;]/div[@class=&quot;overflow-table small&quot;]/table[@class=&quot;info-tbl&quot;]/tbody[1]/tr[@class=&quot;tst_ordersPage_orderLine&quot;]/td[@class=&quot;col-erp&quot;]/a[1]</value>
+      <value>id(&quot;tst_quickOrder_addAll&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='tst_quickOrder_addAll']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='firstPageContainer']/div/div/div/div/div[3]/div/div/div/table/tbody/tr/td[2]/a</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
-      <type>Main</type>
-      <value>//a[contains(text(),'S011064119')]</value>
+      <value>//div[@id='nwrap']/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Order Lines'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[2]/following::a[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to Order'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='tyt'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add All to List'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='tutyu'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Item description'])[1]/preceding::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='S011064119']/parent::*</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <type>Main</type>
-      <value>//a[contains(@href, '/MyAccount/Orders/Details?ordernumber=S011064119')]</value>
+      <value>//*/text()[normalize-space(.)='Add All to Cart &amp; Check Out']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]/a</value>
+      <value>//div[2]/div/div/div/div/button</value>
    </webElementXpaths>
 </WebElementEntity>

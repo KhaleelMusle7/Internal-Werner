@@ -111,4 +111,18 @@ public class PLPActions {
 	public static String clickRandomAddToCart() {
 		return clickRandomAddToCartWithQuantity("1")
 	}
+	
+	/***
+	 * Returns the SKU for a specific product at PLP/SRP
+	 * @param index the order of the product in the PLP starting from 0
+	 * @return the SKU of the product
+	 * @author Nada Jom'a
+	 */
+	public static String getItemSKUAtIndex(TestObject obj, int index) {
+		List<WebElement> itemsNumbers = WebUiCommonHelper.findWebElements(obj, GlobalVariable.elementTimeOut)
+		TestObject targetSKU = WebUI.convertWebElementToTestObject(itemsNumbers.get(index))
+
+		String itemSKU = WebUI.getText(targetSKU)
+		return itemSKU
+	}
 }
