@@ -48,12 +48,6 @@
       <testCaseId>Test Cases/Checkout/PickUp/Use Ship To Address/CheckoutWithSavedCCFromOrderApproval</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>59715cf3-2d79-4ca8-b74a-992a5d6cfeb3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout/PickUp/CheckoutWithNewCCFromList</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>c99fc9aa-5fb6-4f64-82d7-e4e66d50c049</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'nada.joma@xngage.com'</initValue>
+      <initValue>'automation@xngage.com'</initValue>
       <name>userName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'password1'</initValue>
+      <initValue>'123123123'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -178,7 +178,7 @@
       <description></description>
       <initValue>'complete'</initValue>
       <name>shipWhenComplete</name>
-	</GlobalVariableEntity>
+   </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://wernerelectric-qa.xngage.net/QuickOrder'</initValue>
