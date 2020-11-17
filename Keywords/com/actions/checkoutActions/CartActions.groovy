@@ -21,6 +21,19 @@ public class CartActions {
 	def clickCheckoutButton() {
 		BasicActions.clickElement(findTestObject('Checkout/Page_Cart/button_checkout'))
 	}
+	
+	
+	/***
+	 * Clicks on Save Order Button
+	 * @author Shurooq Salahat
+	 */
+	@Keyword
+	def clickSaveOrderButton() {
+		BasicActions.clickElement(findTestObject('Object Repository/Checkout/Page_Cart/button_saveOrder'))
+	}
+	
+
+
 
 	/***
 	 * Navigates to Cart page and makes sure no items exist in the cart before starting specific test scenario

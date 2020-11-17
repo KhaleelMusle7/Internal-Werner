@@ -56,7 +56,7 @@ class CartValidations {
 		assert true == false
 		return itemIndex
 	}
-	
+
 	/***
 	 * Verifies if an item with specific SKU exists in the cart
 	 * @param SKU the ERP number of the item

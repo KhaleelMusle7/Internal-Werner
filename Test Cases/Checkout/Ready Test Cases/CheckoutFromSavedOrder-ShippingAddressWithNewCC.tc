@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CheckoutFromSavedOrder-ShippingAddressWithNewCC</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be6ae93a-8ddb-4089-9e17-069bc11e89e5</testCaseGuid>
+</TestCaseEntity>

@@ -21,6 +21,15 @@ public class BasicActions {
 		WebUI.click(element)
 	}
 
+	/***
+	 * Scroll to given Element
+	 * @param element
+	 * @author Shurooq Salahat
+	 */
+	def static  scrollToElement(TestObject element){
+		WebUI.scrollToElement(element, 0)
+	}
+
 	/**
 	 * Write the given text to the given element
 	 * @param element
@@ -136,7 +145,7 @@ public class BasicActions {
 	def static navigateToURL(String Url){
 		WebUI.navigateToUrl(Url);
 	}
-	
+
 	/***
 	 * Clicks on a random element from a set of elements with the same selector
 	 * @param obj the selector represents the set of elements
