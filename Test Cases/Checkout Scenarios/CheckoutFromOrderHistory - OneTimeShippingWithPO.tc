@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CheckoutWithSavedCCFromOrderApproval</name>
+   <name>CheckoutFromOrderHistory - OneTimeShippingWithPO</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5fd4be60-3034-445e-8e4e-7bdae92cd714</testCaseGuid>
+   <testCaseGuid>cfd62708-55ec-4902-9a0f-7c8aa916a4cc</testCaseGuid>
 </TestCaseEntity>

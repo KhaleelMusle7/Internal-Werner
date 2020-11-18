@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CheckoutFromOrderHistory-OneTimeAddressWithPO</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>cfd62708-55ec-4902-9a0f-7c8aa916a4cc</testCaseGuid>
-</TestCaseEntity>
