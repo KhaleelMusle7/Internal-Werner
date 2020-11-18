@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CheckoutFromQuickOrder-ShippingAddressWithPO</name>
+   <name>CheckoutFromSavedOrder - ShippingAddressWithNewCC</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d521c259-ae65-4259-909f-02cfed45ed4e</testCaseGuid>
+   <testCaseGuid>be6ae93a-8ddb-4089-9e17-069bc11e89e5</testCaseGuid>
 </TestCaseEntity>

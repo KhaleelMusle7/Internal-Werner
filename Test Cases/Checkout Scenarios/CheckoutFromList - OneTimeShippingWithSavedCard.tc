@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CheckoutFromList-OneTimeShippingWithSavedCard</name>
+   <name>CheckoutFromList - OneTimeShippingWithSavedCard</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>eebb7c27-8af5-4829-9c7b-47172390bf5c</testCaseGuid>

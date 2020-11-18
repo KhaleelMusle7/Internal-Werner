@@ -1,5 +1,3 @@
-import com.validations.checkoutValidations.CartValidations as CartValidations
-
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.OpenBrowser'()
@@ -20,7 +18,7 @@ String itemSKU = CustomKeywords.'com.actions.myAccountActions.QuickOrderActions.
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
 
-CartValidations.verifyItemExistsInCart(itemSKU)
+CustomKeywords.'com.validations.checkoutValidations.CartValidations.verifyItemExistsInCart'(itemSKU)
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 

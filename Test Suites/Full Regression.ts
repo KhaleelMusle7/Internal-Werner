@@ -12,39 +12,63 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>84e6bf26-f54b-4158-b967-c7005b2a5085</testSuiteGuid>
    <testCaseLink>
-      <guid>27ba92ba-f343-429b-b5e5-9d1681682bbf</guid>
+      <guid>0c86f1cb-1c00-40e3-a93a-98afc9323a47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromList-OneTimeShippingWithSavedCard</testCaseId>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromList - OneTimeShippingWithSavedCard</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>223c8598-4a7a-4f94-8c82-9ca2a4dee781</guid>
+      <guid>8237f38a-f06e-46d8-ad37-17d43affff56</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromOrderApproval - OneTimeShippingAddressWithPO</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7b4c6a35-f122-499d-a8d4-86ba6478988f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromOrderHistory - OneTimeShippingWithPO</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6b5a60d0-69a8-43e0-9443-b91db7f3e16c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromPDP - ShippingAddressWithNewCC</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6a5355c-7642-41de-876c-f71e35ab4e0f</guid>
+      <guid>c6536e9c-b4ff-4625-bf0e-075af0fa75b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromPLP - OneTimeShippingAddressWithPO</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a26fb5b3-2e40-41e4-af4f-b6103ea570c6</guid>
+      <guid>6fbda020-96b5-47f2-bc3f-f1a8f7446733</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromQuickOrder-ShippingAddressWithPO</testCaseId>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromQuickOrderModal - ShippingAddressWithSaveNewCard</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>05087d6a-0317-412e-a43e-c28075b2c004</guid>
+      <guid>5ba43090-3f80-4715-9bff-7463fa2e389b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromQuickOrderModal-ShippingAddressWithSaveNewCard</testCaseId>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromQuickOrderPage - ShippingAddressWithPO</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>008353c7-82a4-4a73-a435-e8cdbc4c92e1</guid>
+      <guid>ee788b21-a9fe-43ed-8e6c-e0bd30a41e19</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromSavedOrder-ShippingAddressWithNewCC</testCaseId>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromSavedOrder - ShippingAddressWithNewCC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db517eff-865c-4736-9e14-e995da96d6b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromSearchSuggestionModal - ShippingAddressWithSavedCard</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bbeb2980-7b77-4217-8f03-8ef1dd653979</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Scenarios/CheckoutFromSRP - OneTimeAddressWithSaveNewCard</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
