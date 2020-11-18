@@ -8,22 +8,20 @@ CustomKeywords.'com.helpers.loginHelpers.ChangeCustomerHelpers.ChangeCustomer'()
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clearCart'()
 
-CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.PLP_URL)
+CustomKeywords.'com.actions.headerActions.SearchActions.searchForProduct'(GlobalVariable.Search_term)
 
-String addedItemSKU = CustomKeywords.'com.actions.PLPActions.PLPActions.clickRandomAddToCartWithQuantity'(GlobalVariable.qty)
+CustomKeywords.'com.actions.headerActions.SearchActions.clickAddToCart'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToCart'()
-
-CustomKeywords.'com.validations.checkoutValidations.CartValidations.verifyItemExistsInCartWithSpecificQuantity'(addedItemSKU,
-	GlobalVariable.qty)
 
 CustomKeywords.'com.actions.checkoutActions.CartActions.clickCheckoutButton'()
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesStepWithDeliveryAddress'()
 
-CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.shipWhenAvailble, GlobalVariable.Attention, GlobalVariable.ShippingInstructions)
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.shipWhenAvailble, GlobalVariable.Attention, 
+    GlobalVariable.ShippingInstructions)
 
-CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithSavedCC'()
+String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithSavedCC'()
 
 CustomKeywords.'com.actions.checkoutActions.ReviewActions.clickSubmitOrder'()
 
@@ -34,5 +32,13 @@ String orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmati
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
 CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.searchOrderByOrderNumber'(orderNumber)
+
+CustomKeywords.'com.validations.myAccountValidations.OrderHistoryValidations.verifyOrderHistoryHasItems'()
+
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.clickOrderNumber'()
+
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentOrderNumber'(orderNumber)
+
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentPONumber'(poNumber)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

@@ -33,7 +33,8 @@ CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesSt
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.shipWhenComplete, GlobalVariable.Attention,
 	GlobalVariable.ShippingInstructions)
-String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithSaveNewCC'()
+
+String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithNewCC'()
 
 CustomKeywords.'com.actions.checkoutActions.ReviewActions.clickSubmitOrder'()
 
@@ -54,4 +55,3 @@ CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.ver
 CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentPONumber'(poNumber)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()
-
