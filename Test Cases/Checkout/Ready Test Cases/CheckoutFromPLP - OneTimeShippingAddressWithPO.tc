@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CheckoutFromPLP-OneTimeShippingAddressWithPO</name>
+   <name>CheckoutFromPLP - OneTimeShippingAddressWithPO</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>40b21527-44eb-4064-8397-8333fb8b152e</testCaseGuid>

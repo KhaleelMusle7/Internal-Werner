@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CheckoutWithNewCCFromPDP</name>
+   <name>CheckoutFromSRP - OneTimeAddressWithSaveNewCard</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d8925838-6cb5-4566-ae2e-770ee91cd70d</testCaseGuid>
+   <testCaseGuid>21c6ef6d-0d77-4c94-bff7-6483caf90721</testCaseGuid>
 </TestCaseEntity>

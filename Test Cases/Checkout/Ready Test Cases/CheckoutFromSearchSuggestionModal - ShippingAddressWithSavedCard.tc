@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CheckoutFromSearchSuggestionModal - ShippingAddressWithSavedCard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>198b4ae3-d49a-44f7-8ee8-5c78c967a0e9</testCaseGuid>
+</TestCaseEntity>

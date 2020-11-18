@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>span.xng-spinner-label.xng-spinner-label-default</value>
+         <value>.xng-add-to-cart-wrapper .xng-add-to-cart-btn:enabled</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
