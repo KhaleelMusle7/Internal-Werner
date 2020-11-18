@@ -2,6 +2,7 @@ package com.actions.myAccountActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.actions.basicActions.BasicActions
+import com.actions.basicActions.GlobalActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 
@@ -54,6 +55,7 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def clickOrderNumber() {
+		GlobalActions.WaitForLoaderToFinish()
 		BasicActions.clickElement(findTestObject('My Account/Page_Order History/orderNumber'))
 	}
 

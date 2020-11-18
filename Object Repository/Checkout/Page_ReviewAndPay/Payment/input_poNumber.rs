@@ -6,15 +6,15 @@
    <elementGuidId>b2222c7e-5475-47b6-ae7d-3513de6649fd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='poNumber']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#poNumber</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='poNumber']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

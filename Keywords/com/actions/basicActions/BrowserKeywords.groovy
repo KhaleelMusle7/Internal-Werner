@@ -20,6 +20,16 @@ public class BrowserKeywords {
 		WebUI.navigateToUrl(GlobalVariable.Site_URL)
 	}
 
+	
+	/**
+	 * Clear Cookies in browser and signout from website
+	 * @author Shurooq Salahat
+	 */
+	@Keyword
+	def clearCookies() {
+		WebUI.deleteAllCookies()
+	}
+
 	/**
 	 * Close Browser
 	 * @author Iman Abu Abiah

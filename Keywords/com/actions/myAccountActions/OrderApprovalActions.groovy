@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.actions.basicActions.BasicActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
+import com.actions.basicActions.GlobalActions
 
 
 class OrderApprovalActions {
@@ -44,7 +45,21 @@ class OrderApprovalActions {
 	 */
 	@Keyword
 	def static clickOrderNumberLink() {
+		GlobalActions.WaitForLoaderToFinish()
+		
 		TestObject orderNumberLink = findTestObject('My Account/Page_Order Approval/a_orderNumber')
 		BasicActions.clickElement(orderNumberLink)
+		
+	}
+
+
+	/***
+	 * Clicks on first order number link in order approval table
+	 * @author Shurooq Salahat
+	 */
+	@Keyword
+	def static clickSubmitForApprovalButton() {
+		TestObject submitForApproval = findTestObject('Object Repository/My Account/Page_Order Approval/button_submitForApproval')
+		BasicActions.clickElement(submitForApproval)
 	}
 }

@@ -87,4 +87,19 @@ public class CheckoutPaymentHelpers {
 		PaymentActions.clickNext()
 		return PO
 	}
+	
+
+	/**
+	 * This keyword will do the following:
+	 * 1. Fill random PO number field
+	 * 2. Proceed to the next step
+	 * @return the entered PO number
+	 * @author Shurooq Salahat
+	 */
+	@Keyword
+	def PaymentStepWithPOInOrderApproval(){
+		String PO = PaymentActions.writeRandomPONumber()
+		PaymentActions.clickNext()
+		return PO
+	}
 }

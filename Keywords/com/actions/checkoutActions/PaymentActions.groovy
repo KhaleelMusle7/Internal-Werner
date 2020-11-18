@@ -54,10 +54,10 @@ public class PaymentActions {
 	 */
 	def static wrtiePONumber(){
 		TestObject poNumberField = findTestObject('Checkout/Page_ReviewAndPay/Payment/input_poNumber')
-		
+
 		BasicActions.writeText(poNumberField, GlobalVariable.PO_Number)
 	}
-	
+
 	/***
 	 * Writes a random PO Number concatenated with a PO prefix configured in the Global Variables
 	 * @return PO the value of written PO

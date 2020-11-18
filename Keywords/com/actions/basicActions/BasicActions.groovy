@@ -20,6 +20,8 @@ public class BasicActions {
 	def static  clickElement(TestObject element){
 		WebUI.click(element)
 	}
+	
+
 
 	/***
 	 * Scroll to given Element
