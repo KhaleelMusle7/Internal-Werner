@@ -3,6 +3,7 @@ package com.actions.myAccountActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.actions.basicActions.BasicActions
+import com.actions.basicActions.GlobalActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 
@@ -42,6 +43,7 @@ public class OrderDetailsActions {
 		TestObject itemSKUObject = findTestObject('/My Account/Page_Order Details/span_itemSKU')
 		String itemSKUText = BasicActions.getElementTextAtIndex(itemSKUObject, 0)
 		BasicActions.clickElement(findTestObject('My Account/Page_Order Details/button_reorder'))
+		GlobalActions.waitToastMessageToDisplay()
 		return itemSKUText
 	}
 	

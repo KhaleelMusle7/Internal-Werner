@@ -6,6 +6,8 @@ import com.actions.checkoutActions.Checkout_Actions
 import com.actions.myAccountActions.OrderHistoryActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
+import org.openqa.selenium.Keys
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class SearchActions {
 
@@ -28,7 +30,16 @@ public class SearchActions {
 	 */
 	@Keyword
 	def static clickAddToCart (){
-		Checkout_Actions.clickAddToCart(findTestObject('Page_Search/button_AddToCart'))
+		BasicActions.clickElementAtIndex(findTestObject('Page_Search/button_AddToCart'), 0)
+	}
+	
+	/***
+	 * Press Enter  To navigate to search result page
+	 * @author Nada Jom'a
+	 */
+	@Keyword
+	def static SubmitSearchRequest() {
+		WebUI.sendKeys(findTestObject('Page_Search/input_searchField'), Keys.chord(Keys.ENTER))
 	}
 
 }
