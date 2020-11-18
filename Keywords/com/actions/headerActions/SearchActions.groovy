@@ -1,13 +1,14 @@
 package com.actions.headerActions
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
+
 import com.actions.basicActions.BasicActions
-import com.actions.checkoutActions.Checkout_Actions
-import com.actions.myAccountActions.OrderHistoryActions
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
-import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable
 
 public class SearchActions {
 
@@ -27,10 +28,13 @@ public class SearchActions {
 	/**
 	 * Click add to cat button and close the search auto-complete
 	 * @author Iman Abu Abiah
+	 * @author Anas Salahat
 	 */
 	@Keyword
 	def static clickAddToCart (){
-		BasicActions.clickElementAtIndex(findTestObject('Page_Search/button_AddToCart'), 0)
+		TestObject addToCartButton = findTestObject('Page_Search/button_AddToCart')
+		WebUI.waitForElementVisible(addToCartButton, GlobalVariable.elementTimeOut)
+		BasicActions.clickElementAtIndex(addToCartButton, 0)
 	}
 	
 	/***
