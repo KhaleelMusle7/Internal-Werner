@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'5'</initValue>
+      <initValue>'7'</initValue>
       <name>qty</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

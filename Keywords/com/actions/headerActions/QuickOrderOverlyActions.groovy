@@ -10,7 +10,7 @@ import internal.GlobalVariable
 public class QuickOrderOverlyActions {
 
 	public static void expandQuickOrder() {
-		WebUI.mouseOver(findTestObject('My Account/Page_Quick Order/Span_QuickOrderOverlay'))
+		WebUI.mouseOver(findTestObject('Object Repository/Header/QuickOrderOverly/span_quickOrderOverlay'))
 	}
 
 	def static addRandomItem() {
