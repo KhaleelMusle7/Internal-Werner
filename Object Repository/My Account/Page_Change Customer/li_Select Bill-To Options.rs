@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Selected_Item</name>
+   <name>li_Select Bill-To Options</name>
    <tag></tag>
-   <elementGuidId>4423f09f-3cbe-4aed-9e3a-7acd5dd64927</elementGuidId>
+   <elementGuidId>5cfdf95e-0fcd-45dc-be94-d91390b699b1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul[class=&quot;k-list k-reset&quot;] > li[class=&quot;k-item&quot;]</value>
+         <value>ul[id=&quot;selectBillTo_listbox&quot;] >li</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

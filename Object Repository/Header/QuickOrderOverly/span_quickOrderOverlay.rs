@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_PlaceSavedOrder</name>
+   <name>span_quickOrderOverlay</name>
    <tag></tag>
-   <elementGuidId>b1930b23-8223-4a44-b266-696a34c28557</elementGuidId>
+   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>CSS</key>
+         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#tst_savedOrderDetail_placeSavedOrder</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

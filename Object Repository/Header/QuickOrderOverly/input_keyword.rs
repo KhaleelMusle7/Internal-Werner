@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_itemSKU</name>
+   <name>input_keyword</name>
    <tag></tag>
-   <elementGuidId>4ba06b8d-6f3b-4491-ba9b-07f51b33ecc4</elementGuidId>
+   <elementGuidId>e1202208-ad4d-4442-a35c-b493435c9f57</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>CSS</key>
+         <value>#qo-search-widget-1</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>span.item-num-sku > span</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

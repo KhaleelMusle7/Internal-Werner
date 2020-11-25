@@ -13,7 +13,7 @@ public class GlobalActions {
 	 *  wait for loader finish 
 	 */
 	def static WaitForLoaderToFinish(){
-		TestObject loadingSpinner = findTestObject('Page_ChangeCustomer/loader')
+		TestObject loadingSpinner = findTestObject('Common Objects/loader')
 		WebUI.waitForElementNotVisible(loadingSpinner, GlobalVariable.elementTimeOut)
 	}
 
@@ -33,11 +33,11 @@ public class GlobalActions {
 	 * @author khaleel Musleh
 	 */
 	def static changeFulfilmentMethodToPickUp(){
-		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
+		TestObject fulfillmentFromHeader = findTestObject('Page_Fulfilment Method/span_fulfilmentMethod')
 		BasicActions.clickElement(fulfillmentFromHeader)
-		TestObject pickUpOption = findTestObject('Page_FulfilmentMethod/label_Pick Up')
+		TestObject pickUpOption = findTestObject('Page_Fulfilment Method/label_pickup')
 		BasicActions.clickElement(pickUpOption)
-		TestObject closeIcon = findTestObject('Page_FulfilmentMethod/a_closeIcon')
+		TestObject closeIcon = findTestObject('Page_Fulfilment Method/a_closeIcon')
 		BasicActions.clickElement(closeIcon)
 	}
 
@@ -46,11 +46,11 @@ public class GlobalActions {
 	 * @author Iman Abu Abiah
 	 */
 	def static changeFulfilmentMethodToDelivery(){
-		TestObject fulfillmentFromHeader = findTestObject('Object Repository/Page_FulfilmentMethod/span_fulfilmentMethod')
+		TestObject fulfillmentFromHeader = findTestObject('Page_Fulfilment Method/span_fulfilmentMethod')
 		BasicActions.clickElement(fulfillmentFromHeader)
-		TestObject deliveryOption = findTestObject('Page_FulfilmentMethod/label_Delivery')
+		TestObject deliveryOption = findTestObject('Page_Fulfilment Method/label_Delivery')
 		BasicActions.clickElement(deliveryOption)
-		TestObject closeIcon = findTestObject('Page_FulfilmentMethod/a_closeIcon')
+		TestObject closeIcon = findTestObject('Page_Fulfilment Method/a_closeIcon')
 		BasicActions.clickElement(closeIcon)
 	}
 }

@@ -56,7 +56,7 @@ public class OrderHistoryActions {
 	@Keyword
 	def clickOrderNumber() {
 		GlobalActions.WaitForLoaderToFinish()
-		BasicActions.clickElement(findTestObject('My Account/Page_Order History/orderNumber'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Order History/a_orderNumber'))
 	}
 
 	/***
@@ -87,7 +87,7 @@ public class OrderHistoryActions {
 	 */
 	@Keyword
 	def static navigateToRandomOrder() {
-		TestObject orderERPbject = findTestObject('My Account/Page_Order History/orderNumber')
+		TestObject orderERPbject = findTestObject('My Account/Page_Order History/a_orderNumber')
 		BasicActions.clickRandomElement(orderERPbject)
 	}
 }

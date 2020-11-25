@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Select Bill-To Options</name>
+   <name>span_itemSKU</name>
    <tag></tag>
-   <elementGuidId>5cfdf95e-0fcd-45dc-be94-d91390b699b1</elementGuidId>
+   <elementGuidId>67b17a94-2fe4-4e5d-810e-674684cf3c4f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul[id=&quot;selectBillTo_listbox&quot;] >li</value>
+         <value>li[id^='tst_quickOrder'] div[id^='tst_productName_productId'] div span[class='item-num-sku'] span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

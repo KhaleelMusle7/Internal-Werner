@@ -23,7 +23,7 @@ CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesSt
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.shipWhenComplete, GlobalVariable.Attention,
 	GlobalVariable.ShippingInstructions)
 
-String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPOInOrderApproval'()
+CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPOInOrderApproval'()
 
 CustomKeywords.'com.actions.myAccountActions.OrderApprovalActions.clickSubmitForApprovalButton'()
 
@@ -55,24 +55,25 @@ CustomKeywords.'com.helpers.checkoutHelpers.CheckoutAddressesHelpers.AddressesSt
 
 CustomKeywords.'com.helpers.checkoutHelpers.CheckoutShippingHelpers.ShippingStep'(GlobalVariable.shipWhenComplete, GlobalVariable.Attention,
 	GlobalVariable.ShippingInstructions)
-String PONumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
+
+String poNumber = CustomKeywords.'com.helpers.checkoutHelpers.CheckoutPaymentHelpers.PaymentStepWithPO'()
 
 CustomKeywords.'com.actions.checkoutActions.ReviewActions.clickSubmitOrder'()
 
 CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.verifyPageTitle'()
 
-String OrderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.getOrderNumber'()
+orderNumber = CustomKeywords.'com.actions.checkoutActions.OrderConfirmationActions.getOrderNumber'()
 
 CustomKeywords.'com.util.helpers.generalHelpers.Navigations.navigateToPage'(GlobalVariable.OrderHistory_URL)
 
-CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.searchOrderByOrderNumber'(OrderNumber)
+CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.searchOrderByOrderNumber'(orderNumber)
 
 CustomKeywords.'com.validations.myAccountValidations.OrderHistoryValidations.verifyOrderHistoryHasItems'()
 
 CustomKeywords.'com.actions.myAccountActions.OrderHistoryActions.clickOrderNumber'()
 
-CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentOrderNumber'(OrderNumber)
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentOrderNumber'(orderNumber)
 
-CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentPONumber'(PONumber)
+CustomKeywords.'com.validations.myAccountValidations.OrderDetailsValidations.verifyCurrentPONumber'(poNumber)
 
 CustomKeywords.'com.actions.basicActions.BrowserKeywords.closeBrowser'()

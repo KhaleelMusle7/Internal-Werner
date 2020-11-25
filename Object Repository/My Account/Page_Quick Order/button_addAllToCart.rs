@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Select StateAlabamaAlaskaAmerican Sa_50aeed</name>
+   <name>button_addAllToCart</name>
    <tag></tag>
-   <elementGuidId>5c25178c-e8b4-4db7-8c5a-af952aa3a188</elementGuidId>
+   <elementGuidId>7cb89eec-2fa1-48e7-9928-26939737a084</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#state</value>
+         <value>#tst_quickOrder_addAll</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='state']</value>
+         <value>//button[@id='tst_quickOrder_addAll']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,118 +21,106 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>state</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>state</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>select</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-model</name>
-      <type>Main</type>
-      <value>vm.creditCardBillingState</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xng-validate</name>
-      <type>Main</type>
-      <value>{ isRequired: true}</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-options</name>
-      <type>Main</type>
-      <value>StateModel.name for StateModel in vm.creditCardBillingCountry.states</value>
+      <value>tst_quickOrder_addAll</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ng-pristine ng-untouched ng-empty ng-valid-custom-validate-injector ng-invalid ng-invalid-is-required</value>
+      <value>button primary btn-add-all-checkout</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>vm.addAllToCart('/Cart')</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-disabled</name>
+      <type>Main</type>
+      <value>!vm.allQtysIsValid()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select StateAlabamaAlaskaAmerican SamoaArizonaArkansasArmed Forces AmericasArmed Forces EuropeArmed Forces PacificCaliforniaColoradoConnecticutDelawareDistrict of ColumbiaFederated States of MicronesiaFloridaGeorgiaGuamHawaiiIdahoIllinoisIndianaIowaKansasKentuckyLouisianaMaineMarshall IslandsMarylandMassachusettsMichiganMinnesotaMississippiMissouriMontanaNebraskaNevadaNew HampshireNew JerseyNew MexicoNew YorkNorth CarolinaNorth DakotaNorthern Mariana IslandsOhioOklahomaOregonPalauPennsylvaniaPuerto RicoRhode IslandSouth CarolinaSouth DakotaTennesseeTexasUtahVermontVirgin IslandsVirginiaWashingtonWest VirginiaWisconsinWyoming</value>
+      <value>
+                            Add All to Cart &amp; Check Out
+                        </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;state&quot;)</value>
+      <value>id(&quot;tst_quickOrder_addAll&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='state']</value>
+      <value>//button[@id='tst_quickOrder_addAll']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='pmnt']/div[2]/div[6]/div[2]/div/div[3]/div[2]/div[2]/div/div/select</value>
+      <value>//div[@id='nwrap']/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Order Lines'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(optional)'])[6]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to Order'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='State'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add All to List'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(optional)'])[7]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Item description'])[1]/preceding::button[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Add All to Cart &amp; Check Out']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div[2]/div[2]/div/div/select</value>
+      <value>//div[2]/div/div/div/div/button</value>
    </webElementXpaths>
 </WebElementEntity>

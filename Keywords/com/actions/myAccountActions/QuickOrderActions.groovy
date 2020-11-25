@@ -32,7 +32,7 @@ public class QuickOrderActions {
 	 */
 	@Keyword
 	def static searchItem(String searchTerm){
-		TestObject searchField = findTestObject('My Account/Page_Quick Order/input_Search keyword')
+		TestObject searchField = findTestObject('My Account/Page_Quick Order/input_searchKeyword')
 		BasicActions.writeText(searchField, searchTerm)
 	}
 
@@ -42,7 +42,7 @@ public class QuickOrderActions {
 	 */
 	@Keyword
 	def static selectRandomSuggestedElements() {
-		TestObject obj = findTestObject('My Account/Page_Quick Order/List_Suggested items')
+		TestObject obj = findTestObject('My Account/Page_Quick Order/li_suggestedItems')
 		BasicActions.clickRandomElement(obj)
 	}
 
@@ -52,13 +52,13 @@ public class QuickOrderActions {
 	 */
 	@Keyword
 	def static  waitAddToOrderButtonToBeEnabled() {
-		TestObject obj = findTestObject('My Account/Page_Quick Order/button_Add to Order')
+		TestObject obj = findTestObject('My Account/Page_Quick Order/button_addToOrder')
 		WebUI.waitForElementVisible(obj, GlobalVariable.elementTimeOut)
 	}
 	
 	@Keyword
 	def static waitForAddAllToCartToBeVisible(){
-		TestObject obj = findTestObject('My Account/Page_Quick Order/button_Add All to Cart')
+		TestObject obj = findTestObject('My Account/Page_Quick Order/button_addAllToCart')
 		WebUI.waitForElementVisible(obj, GlobalVariable.elementTimeOut)
 	}
 
@@ -68,7 +68,7 @@ public class QuickOrderActions {
 	 */
 	@Keyword
 	def static clickAddToOrder(){
-		TestObject addToOrderField = findTestObject('My Account/Page_Quick Order/button_Add to Order')
+		TestObject addToOrderField = findTestObject('My Account/Page_Quick Order/button_addToOrder')
 		BasicActions.clickElement(addToOrderField)
 	}
 
@@ -79,10 +79,10 @@ public class QuickOrderActions {
 	 */
 	@Keyword
 	def static addAllProductsToCart() {
-		TestObject itemNumSKU = findTestObject('My Account/Page_Quick Order/span_item SKU')
+		TestObject itemNumSKU = findTestObject('My Account/Page_Quick Order/span_itemSKU')
 		String itemSKU = PLPActions.getItemSKUAtIndex(itemNumSKU, 0)
 
-		TestObject obj = findTestObject('My Account/Page_Quick Order/button_Add All to Cart')
+		TestObject obj = findTestObject('My Account/Page_Quick Order/button_addAllToCart')
 		BasicActions.clickElementAtIndex(obj, 0)
 
 		return itemSKU

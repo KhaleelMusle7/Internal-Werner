@@ -81,7 +81,7 @@ public class PLPActions {
 			int randomProductContainerIndex = rand.nextInt(availbleAddToCartProducts.size());
 
 			WebElement randomProductContainerElement = availbleAddToCartProducts.get(randomProductContainerIndex);
-
+			
 			WebElement itemSKUObject = randomProductContainerElement.findElement(By.cssSelector(".item-num-sku > span"))
 			String itemSKUText = itemSKUObject.getText()
 

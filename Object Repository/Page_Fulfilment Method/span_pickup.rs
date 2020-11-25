@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Pick Up</name>
+   <name>span_pickup</name>
    <tag></tag>
-   <elementGuidId>2d54957b-7fba-4106-b99c-d749df624b01</elementGuidId>
+   <elementGuidId>6fcde332-12aa-4acd-8125-af06398b32d6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='tst_popup_fulfillmentMethod_pickUpOption']/div/label</value>
+         <key>CSS</key>
+         <value>div.fullfilment-part.sticky-fullfilment-part.hide-for-desktop.show-for-sticky > div.fullfilment-methods > button.change-fulfillment-method.button.link.secondary > span</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div[name=&quot;popup-pickUpMethod&quot;] > label.input-label</value>
+         <key>XPATH</key>
+         <value>//header[@id='header']/div[2]/div/div[3]/div/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,21 +21,14 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>for</name>
+      <name>ng-bind</name>
       <type>Main</type>
-      <value>popup-pickUpMethod</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>input-label</value>
+      <value>vm.session.fulfillmentMethod === 'Ship' ? 'Ship' : 'Pick Up'</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,41 +42,34 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tst_popup_fulfillmentMethod_pickUpOption&quot;)/div[@class=&quot;xng-field xng-radio  ng-not-empty ng-valid&quot;]/label[@class=&quot;input-label&quot;]</value>
+      <value>id(&quot;header&quot;)/div[@class=&quot;block-container block-max-width head-main-content x:row x:justify-between x:items-center&quot;]/div[@class=&quot;hamburger-logo-wrapper x:row x:justify-start x:items-center&quot;]/div[@class=&quot;fullfilment-part sticky-fullfilment-part hide-for-desktop show-for-sticky&quot;]/div[@class=&quot;fullfilment-methods&quot;]/button[@class=&quot;change-fulfillment-method button link secondary&quot;]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='tst_popup_fulfillmentMethod_pickUpOption']/div/label</value>
+      <value>//header[@id='header']/div[2]/div/div[3]/div/button/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery'])[1]/following::label[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quick Order'])[1]/preceding::span[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fulfillment Method'])[1]/following::label[4]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::label[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bulk Ordering'])[1]/preceding::span[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/div/div/div/div[2]/div/label</value>
+      <value>//div[3]/div/button/span</value>
    </webElementXpaths>
 </WebElementEntity>

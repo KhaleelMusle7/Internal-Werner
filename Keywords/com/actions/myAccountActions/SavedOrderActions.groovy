@@ -13,6 +13,6 @@ public class SavedOrderActions {
 	 */
 	@Keyword
 	def clickPlaceSaveOrderButton() {
-		BasicActions.clickElement(findTestObject('Object Repository/Page_SavedOrder/button_PlaceSavedOrder'))
+		BasicActions.clickElement(findTestObject('My Account/Page_SavedOrder/button_PlaceSavedOrder'))
 	}
 }

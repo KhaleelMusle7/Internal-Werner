@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Search keyword</name>
+   <name>input_searchKeyword</name>
    <tag></tag>
    <elementGuidId>454a18bc-840a-4b50-bc85-d5f9baa3d25b</elementGuidId>
    <selectorCollection>

@@ -14,19 +14,19 @@ public class QuickOrderOverlyActions {
 	}
 
 	def static addRandomItem() {
-		BasicActions.clickElement(findTestObject('My Account/Page_Quick Order/Keyword_input'))
-		BasicActions.writeText(findTestObject('My Account/Page_Quick Order/Keyword_input'), GlobalVariable.Search_term)
-		BasicActions.clickElementAtIndex(findTestObject('My Account/Page_Quick Order/Selected_Item'), 0)
+		BasicActions.clickElement(findTestObject('Header/QuickOrderOverly/input_keyword'))
+		BasicActions.writeText(findTestObject('Header/QuickOrderOverly/input_keyword'), GlobalVariable.Search_term)
+		BasicActions.clickElementAtIndex(findTestObject('Header/QuickOrderOverly/li_selectedItem'), 0)
 	}
 
-	def static addToCart() {
-		BasicActions.clickElement(findTestObject('My Account/Page_Quick Order/addToCart'))
+	def static addAllToCartAndCheckout() {
+		BasicActions.clickElement(findTestObject('Header/QuickOrderOverly/button_addToCart'))
 	}
 
 	@Keyword
 	def static addProductToCart() {
 		QuickOrderOverlyActions.expandQuickOrder()
 		QuickOrderOverlyActions.addRandomItem()
-		QuickOrderOverlyActions.addToCart()
+		QuickOrderOverlyActions.addAllToCartAndCheckout()
 	}
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Span_quickOrderOverlay</name>
+   <name>li_selectedItem</name>
    <tag></tag>
-   <elementGuidId>7dcc5b32-2720-43f0-8207-b354398973cb</elementGuidId>
+   <elementGuidId>4423f09f-3cbe-4aed-9e3a-7acd5dd64927</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>ul[class=&quot;k-list k-reset&quot;] > li[class=&quot;k-item&quot;]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#werner-quick-order-menu > span.menu-label > span.primary-title</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

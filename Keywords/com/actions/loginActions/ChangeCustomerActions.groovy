@@ -18,8 +18,8 @@ public class ChangeCustomerActions {
 	 */
 
 	def static selectBillToAddress(){
-		BasicActions.clickElement(findTestObject('Page_ChangeCustomer/input_selectBillToList'))
-		List<WebElement> BilllistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/BillingAddressDropdown'), GlobalVariable.elementTimeOut)
+		BasicActions.clickElement(findTestObject('My Account/Page_Change Customer/input_selectBillToList'))
+		List<WebElement> BilllistElements = WebUiCommonHelper.findWebElements(findTestObject('My Account/Page_Change Customer/BillingAddressDropdown'), GlobalVariable.elementTimeOut)
 		WebElement firstBillTo = BilllistElements.get(0)
 		firstBillTo.click()
 	}
@@ -30,8 +30,8 @@ public class ChangeCustomerActions {
 	 */
 
 	def static selectShipToAddress(){
-		BasicActions.clickElement(findTestObject('Page_ChangeCustomer/input_selectShipToList'))
-		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('Page_ChangeCustomer/ShippingAddressDropDown'), GlobalVariable.elementTimeOut)
+		BasicActions.clickElement(findTestObject('My Account/Page_Change Customer/input_selectShipToList'))
+		List<WebElement> ShiplistElements = WebUiCommonHelper.findWebElements(findTestObject('My Account/Page_Change Customer/ShippingAddressDropDown'), GlobalVariable.elementTimeOut)
 		WebElement firstShipTo = ShiplistElements.get(0)
 		firstShipTo.click()
 	}
@@ -44,10 +44,10 @@ public class ChangeCustomerActions {
 	 * @author Anas Salahat
 	 */
 	def static selectBillToAddressByCustomer (String billToValue){
-		TestObject billToDropDown = findTestObject('Page_ChangeCustomer/input_selectBillToList')
+		TestObject billToDropDown = findTestObject('My Account/Page_Change Customer/input_selectBillToList')
 		BasicActions.clickElement(billToDropDown)
 		BasicActions.writeText(billToDropDown, billToValue)
-		TestObject billToList = findTestObject('Object Repository/Page_ChangeCustomer/li_Select Bill-To Options')
+		TestObject billToList = findTestObject('My Account/Page_Change Customer/li_Select Bill-To Options')
 		WebUI.waitForElementVisible(billToList, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(billToList)
 	}
@@ -61,22 +61,22 @@ public class ChangeCustomerActions {
 	 */
 
 	def static selectShipToAddressByCustomer (String shipToValue){
-		TestObject shipToDropDown = findTestObject('Page_ChangeCustomer/input_selectShipToList')
+		TestObject shipToDropDown = findTestObject('My Account/Page_Change Customer/input_selectShipToList')
 		BasicActions.clickElement(shipToDropDown)
 		BasicActions.writeText(shipToDropDown, shipToValue)
-		TestObject shipToList = findTestObject('Page_ChangeCustomer/ShippingAddressDropDown')
+		TestObject shipToList = findTestObject('My Account/Page_Change Customer/ShippingAddressDropDown')
 		WebUI.waitForElementVisible(shipToList, GlobalVariable.elementTimeOut)
 		BasicActions.clickElement(shipToList)
 	}
 
 	def static selectFulfillmentMethod (String fulfillmentMethod){
 		if (fulfillmentMethod.equalsIgnoreCase('delivery'))
-			BasicActions.clickElement(findTestObject('Page_ChangeCustomer/radioButton_delivery'))
+			BasicActions.clickElement(findTestObject('My Account/Page_Change Customer/radioButton_delivery'))
 		else
-			BasicActions.clickElement(findTestObject('Page_ChangeCustomer/radioButton_pickUp'))
+			BasicActions.clickElement(findTestObject('My Account/Page_Change Customer/radioButton_pickUp'))
 	}
 
 	def static clickChangeCustomerButton(){
-		BasicActions.clickElement(findTestObject('Page_ChangeCustomer/button_Continue'))
+		BasicActions.clickElement(findTestObject('My Account/Page_Change Customer/button_Continue'))
 	}
 }

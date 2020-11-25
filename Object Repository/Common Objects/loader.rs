@@ -6,12 +6,12 @@
    <elementGuidId>924187b7-5ee4-4b29-8d12-bfa6a139b21c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='nwrap']/div/div[2]/span/div[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div>span>.loader.loader-content-area</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='nwrap']/div/div[2]/span/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

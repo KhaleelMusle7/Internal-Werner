@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_itemQty</name>
+   <name>li_suggestedItems</name>
    <tag></tag>
-   <elementGuidId>a0690954-a0f3-4e67-911b-f2104093f1ae</elementGuidId>
+   <elementGuidId>d906803f-e489-48d2-9f87-d6060d0a99cf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.item-qty > span:nth-child(2)</value>
+         <value>#qo-search-view_listbox li</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

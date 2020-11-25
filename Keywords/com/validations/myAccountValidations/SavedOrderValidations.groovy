@@ -23,7 +23,7 @@ public class SavedOrderValidations {
 	 */
 	@Keyword
 	def static int verifyItemExistsInSavedOrder(String SKU) {
-		List<WebElement> itemsERPNumbers = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_SavedOrder/span_itemSKU'), GlobalVariable.elementTimeOut)
+		List<WebElement> itemsERPNumbers = WebUiCommonHelper.findWebElements(findTestObject('My Account/Page_SavedOrder/span_itemSKU'), GlobalVariable.elementTimeOut)
 		int itemIndex = -1;
 		for (int i = 0; i<itemsERPNumbers.size(); i++) {
 			TestObject currentItemNumberObject = WebUI.convertWebElementToTestObject(itemsERPNumbers.get(i))

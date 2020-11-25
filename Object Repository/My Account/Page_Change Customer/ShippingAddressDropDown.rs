@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Select an optionCredit CardCard endi_bea7c4</name>
+   <name>ShippingAddressDropDown</name>
    <tag></tag>
-   <elementGuidId>057e1158-3eaa-49a3-b873-48a8ac14ad61</elementGuidId>
+   <elementGuidId>3ae5a825-e0a9-42ef-aa3b-03f7e2f62423</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>#paymentMethod</value>
+         <value>li.k-item.k-state-hover</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='paymentMethod']</value>
+         <value>//*[@id=&quot;selectShipTo_listbox&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,125 +24,104 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>paymentMethod</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>paymentMethod</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>select</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-model</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>vm.cart.paymentMethod</value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-options</name>
+      <name>role</name>
       <type>Main</type>
-      <value>PaymentMethod.description for PaymentMethod in vm.paymentMethods</value>
+      <value>option</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xng-validate</name>
+      <name>unselectable</name>
       <type>Main</type>
-      <value>{isRequired: true}</value>
+      <value>on</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ng-pristine ng-untouched ng-valid-custom-validate-injector ng-valid-max-length ng-empty ng-invalid ng-invalid-is-required</value>
+      <value>k-item k-state-hover</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
+      <name>data-offset-index</name>
       <type>Main</type>
-      <value>75</value>
+      <value>0</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select an optionCredit CardCard ending in 1111 (Exp 01/27)long nickname long nickname long nickname long nickname long nickname long nickname long nickname lo ending in 4444 (Exp 01/25)AMERICAN EXPRESS ending in 2574 (Exp 01/20)AMERICAN EXPRESS ending in 4357 (Exp 01/20)AMERICAN EXPRESS ending in 8431 (Exp 02/20)AMERICAN EXPRESS ending in 8945 (Exp 01/20)DISCOVER ending in 0103 (Exp 01/20)DISCOVER ending in 1117 (Exp 01/20)DISCOVER ending in 5725 (Exp 01/20)DISCOVER ending in 7796 (Exp 01/20)MASTERCARD ending in 0504 (Exp 01/20)MASTERCARD ending in 3483 (Exp 01/20)VISA ending in 4032 (Exp 01/20)</value>
+      <value>Use Billing Address</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;paymentMethod&quot;)</value>
+      <value>id(&quot;selectShipTo_listbox&quot;)/li[@class=&quot;k-item k-state-hover&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//select[@id='paymentMethod']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='pmnt']/div[2]/div[2]/div/div/select</value>
+      <value>//ul[@id='selectShipTo_listbox']/li</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Purchase Order (PO)'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Showing 1-20 of 4'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Credit Card'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recipient Address'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Credit Card'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fulfillment Method'])[1]/preceding::li[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(optional)'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery'])[1]/preceding::li[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Use Billing Address']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//select</value>
+      <value>//div[2]/div/div/div/div/div[3]/ul/li</value>
    </webElementXpaths>
 </WebElementEntity>
